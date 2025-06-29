@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.rimrevivals.com.au/sitemap.xml
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1

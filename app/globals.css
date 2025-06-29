@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* BMW M Colors */
+    --bmw-blue: 207 100% 35%; /* #0066B1 - BMW M Blue */
+    --bmw-red: 0 100% 50%; /* #FF0000 - BMW M Red */
+    --bmw-dark-blue: 240 100% 20%; /* #000066 - BMW M Dark Blue */
+    --bmw-purple: 270 100% 40%; /* #6600CC - BMW M Purple */
+
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    /* UI Elements */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Primary - BMW M Blue */
+    --primary: var(--bmw-blue);
+    --primary-foreground: 0 0% 98%;
+
+    /* Secondary - BMW Dark Blue */
+    --secondary: var(--bmw-dark-blue);
+    --secondary-foreground: 0 0% 98%;
+
+    /* Accent - BMW Red */
+    --accent: var(--bmw-red);
+    --accent-foreground: 0 0% 98%;
+
+    /* Muted and UI */
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: var(--bmw-blue);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: var(--bmw-blue);
+    --primary-foreground: 0 0% 98%;
+    --secondary: var(--bmw-dark-blue);
+    --secondary-foreground: 0 0% 98%;
+    --accent: var(--bmw-red);
+    --accent-foreground: 0 0% 98%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: var(--bmw-blue);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BMW M Stripe Accent - can be used as decorative elements */
+.bmw-m-stripe {
+  background: linear-gradient(to right, #0066b1 33.3%, #ff0000 33.3%, #ff0000 66.6%, #6600cc 66.6%);
+}
+
+.bmw-m-stripe-vertical {
+  background: linear-gradient(to bottom, #0066b1 33.3%, #ff0000 33.3%, #ff0000 66.6%, #6600cc 66.6%);
+}
+
+/* Elegant button hover effects */
+.button,
+button[class*="bg-[#FF0000]"],
+button[class*="bg-[#0066B1]"],
+a[class*="bg-[#FF0000]"],
+a[class*="bg-[#0066B1]"] {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.button:hover,
+button[class*="bg-[#FF0000]"]:hover,
+button[class*="bg-[#0066B1]"]:hover,
+a[class*="bg-[#FF0000]"]:hover,
+a[class*="bg-[#0066B1]"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.button:active,
+button[class*="bg-[#FF0000]"]:active,
+button[class*="bg-[#0066B1]"]:active,
+a[class*="bg-[#FF0000]"]:active,
+a[class*="bg-[#0066B1]"]:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.button::before,
+button[class*="bg-[#FF0000]"]::before,
+button[class*="bg-[#0066B1]"]::before,
+a[class*="bg-[#FF0000]"]::before,
+a[class*="bg-[#0066B1]"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.button:hover::before,
+button[class*="bg-[#FF0000]"]:hover::before,
+button[class*="bg-[#0066B1]"]:hover::before,
+a[class*="bg-[#FF0000]"]:hover::before,
+a[class*="bg-[#0066B1]"]:hover::before {
+  left: 100%;
+}
