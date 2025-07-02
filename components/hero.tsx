@@ -38,11 +38,11 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="max-w-2xl text-white text-center sm:text-left mx-auto sm:mx-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Adelaide's Premier Rim Restoration Specialists
+            Adelaide's Premier Rim Restoration Specialist
           </h1>
           <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-            Professional wheel restoration services that bring your damaged, curbed, or corroded rims back to their
-            original glory. Serving all of Adelaide and surrounding areas.
+            Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.
+
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
             <Button
