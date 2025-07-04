@@ -113,7 +113,7 @@ export default function Services() {
 
         <div className="mt-6 text-center">
           <p className="text-xs text-muted-foreground italic max-w-2xl mx-auto">
-            *Final pricing may vary based on rim condition. Submit photos via our quote form for an accurate assessment.
+            *Final pricing may vary based on rim condition and size. Submit photos via our quote form for an accurate assessment.
           </p>
         </div>
       </div>
