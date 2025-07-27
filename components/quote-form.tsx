@@ -36,24 +36,23 @@ const MAX_TOTAL_SIZE = 8 * 1024 * 1024
 // Service options with sub-options
 const serviceOptions = {
   "Budget Restoration": [
-    "Minor scratch and rash repair",
-    "Color matching and repainting (solid colours with a gloss clearcoat)",
-    "Don't use primer (cheaper option if the factory paint can be used as a base)",
+     "Minor scratch and rash repair",
+        "Precise paint code matching (for solid gloss colors)",
+        "Durable gloss clear coat application",
   ],
   "Premium Restoration": [
-    "Tyre removal for optimal finish",
-    "Premium metallic paint",
-    "Premium clear coats (satin, matte)",
-    "Deep scratch and curb rash repair",
-    "Inside barrels painted",
-    "Wax treatment",
+   "Premium metallic paint options",
+    "Custom clear coats (satin or matte finishes)",
+        "Restoration for heavy chipping, fading, and oxidization",
+        "Deep scratch and extensive curb rash repair",
+        "Inside barrels painted for a complete look",
+        "Vehicle drop-off and collection",
   ],
   "Custom Refinishing": [
-    "Structural repair for bent rims",
-    "Welding crack repairs and additional rim surface",
-    "Specialty finishes (chrome, pearl, two tone)",
-    "Ceramic coating",
-    "Oven curing",
+    "Professional tire removal, fitting, and rebalance",
+    "Specialty finishes (e.g., shadow chrome, pearl, two-tone)",
+    "Brake caliper painting",
+    "Polished metal finishes",
   ],
 }
 
