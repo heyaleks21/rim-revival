@@ -63,7 +63,7 @@ export default function Services() {
     <section id="services" className="py-20 bg-gray-100">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Restoration Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Restoration Services</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Choose the perfect restoration package for your complete set of wheels, from basic repairs to custom
             refinishing.*
@@ -110,7 +110,7 @@ export default function Services() {
 
         <div className="mt-6 text-center">
           <p className="text-xs text-muted-foreground italic max-w-2xl mx-auto">
-            *Final pricing may vary based on rim condition and size. Submit photos via our quote form for an accurate assessment.
+            *Final pricing may vary based on rim condition and size. Submit photos via the quote form for an accurate assessment.
           </p>
         </div>
       </div>
