@@ -61,7 +61,7 @@ export default function Hero() {
               onClick={(e) => scrollToSection("gallery", e)}
               aria-label="View our before and after gallery"
             >
-              See Some Examples
+              Before & After Gallery
             </Button>
           </div>
         </div>
