@@ -58,10 +58,10 @@ export default function Hero() {
               size="lg"
               variant="outline"
               className="bg-transparent border-white text-white hover:bg-white/10 text-base px-6 py-3 h-auto w-auto font-medium"
-              onClick={(e) => scrollToSection("services", e)}
-              aria-label="View our rim restoration services"
+              onClick={(e) => scrollToSection("gallery", e)}
+              aria-label="View our before and after gallery"
             >
-              Our Services
+              See Some Examples
             </Button>
           </div>
         </div>

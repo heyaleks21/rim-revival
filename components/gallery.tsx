@@ -3,10 +3,7 @@
 import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
-import { Dialog, DialogContent } from "@/components/ui/dialog"
-import { ArrowLeft, ArrowRight, X, ZoomIn, ZoomOut, ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useMobile } from "@/hooks/use-mobile"
+import { ArrowLeft, ArrowRight } from "lucide-react"
 
 // Define the image data structure
 interface GalleryImage {
@@ -22,19 +19,6 @@ export default function Gallery() {
   // State for the before/after slider
   const [sliderPositions, setSliderPositions] = useState<{ [key: number]: number }>({})
   const sliderRefs = useRef<(HTMLDivElement | null)[]>([])
-
-  // State for the expanded view
-  const [isOpen, setIsOpen] = useState(false)
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const [isBeforeImage, setIsBeforeImage] = useState(false)
-  const [zoomLevel, setZoomLevel] = useState(1)
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [isDragging, setIsDragging] = useState(false)
-  const [startPosition, setStartPosition] = useState({ x: 0, y: 0 })
-
-  const imageRef = useRef<HTMLImageElement>(null)
-  const containerRef = useRef<HTMLDivElement>(null)
-  const isMobile = useMobile()
 
   // Gallery data
   const galleryImages: GalleryImage[] = [
@@ -105,6 +89,42 @@ export default function Gallery() {
       title: "Performance Wheel Upgrade",
       description: "Factory wheels transformed with mirror-finish gloss black for a lasting premium appearance.",
     },
+    {
+      before:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20before.JPEG-XwD6OUSGRHNXggZFYrlsrLbQC0Kmfs.webp",
+      beforeDesc:
+        "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
+      after:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20after.JPEG-WoJ7idkpqd7fYO3NhOCw8tUGgISjfZ.webp",
+      afterDesc:
+        "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
+      title: "Factory Refresh",
+      description: "Standard factory rims given a premium black makeover for enhanced style.",
+    },
+    {
+      before:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20before.JPEG-XwD6OUSGRHNXggZFYrlsrLbQC0Kmfs.webp",
+      beforeDesc:
+        "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
+      after:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20after.JPEG-WoJ7idkpqd7fYO3NhOCw8tUGgISjfZ.webp",
+      afterDesc:
+        "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
+      title: "Complete Transformation",
+      description: "Damaged rims completely restored with professional-grade black finish.",
+    },
+    {
+      before:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20before.JPEG-XwD6OUSGRHNXggZFYrlsrLbQC0Kmfs.webp",
+      beforeDesc:
+        "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
+      after:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20after.JPEG-WoJ7idkpqd7fYO3NhOCw8tUGgISjfZ.webp",
+      afterDesc:
+        "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
+      title: "Professional Restoration",
+      description: "Expert restoration bringing damaged rims back to showroom condition.",
+    },
   ]
 
   // Initialize slider positions
@@ -115,73 +135,6 @@ export default function Gallery() {
     })
     setSliderPositions(initialPositions)
   }, [])
-
-  // Reset zoom and position when dialog opens or image changes
-  useEffect(() => {
-    setZoomLevel(1)
-    setPosition({ x: 0, y: 0 })
-  }, [isOpen, currentImageIndex, isBeforeImage])
-
-  // Preload adjacent images for smoother navigation
-  useEffect(() => {
-    if (isOpen) {
-      const preloadImage = (src: string) => {
-        const img = new Image()
-        img.src = src
-      }
-
-      // Preload next and previous images
-      const nextIndex = (currentImageIndex + 1) % galleryImages.length
-      const prevIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length
-
-      if (isBeforeImage) {
-        preloadImage(galleryImages[nextIndex].before)
-        preloadImage(galleryImages[prevIndex].before)
-        // Also preload the "after" version of current image
-        preloadImage(galleryImages[currentImageIndex].after)
-      } else {
-        preloadImage(galleryImages[nextIndex].after)
-        preloadImage(galleryImages[prevIndex].after)
-        // Also preload the "before" version of current image
-        preloadImage(galleryImages[currentImageIndex].before)
-      }
-    }
-  }, [isOpen, currentImageIndex, isBeforeImage, galleryImages])
-
-  // Handle keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (!isOpen) return
-
-      switch (e.key) {
-        case "ArrowLeft":
-          navigatePrevious()
-          break
-        case "ArrowRight":
-          navigateNext()
-          break
-        case "Escape":
-          closeModal()
-          break
-        case "+":
-        case "=":
-          zoomIn()
-          break
-        case "-":
-          zoomOut()
-          break
-        case "0":
-          resetZoom()
-          break
-        case " ": // Space key to toggle before/after
-          toggleBeforeAfter()
-          break
-      }
-    }
-
-    window.addEventListener("keydown", handleKeyDown)
-    return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [isOpen, currentImageIndex, isBeforeImage, zoomLevel])
 
   // Slider functionality
   const handleSliderChange = (index: number, position: number) => {
@@ -195,9 +148,11 @@ export default function Gallery() {
     e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>,
     index: number,
   ) => {
+    e.preventDefault()
     e.stopPropagation()
 
     const handleMouseMove = (moveEvent: MouseEvent | TouchEvent) => {
+      moveEvent.preventDefault()
       const sliderElement = sliderRefs.current[index]
       if (!sliderElement) return
 
@@ -216,7 +171,8 @@ export default function Gallery() {
       handleSliderChange(index, clampedPosition)
     }
 
-    const handleMouseUp = () => {
+    const handleMouseUp = (upEvent: MouseEvent | TouchEvent) => {
+      upEvent.preventDefault()
       document.removeEventListener("mousemove", handleMouseMove)
       document.removeEventListener("mouseup", handleMouseUp)
       document.removeEventListener("touchmove", handleMouseMove)
@@ -229,174 +185,13 @@ export default function Gallery() {
     document.addEventListener("touchend", handleMouseUp)
   }
 
-  // Modal navigation functions
-  const openModal = (index: number, isBefore: boolean) => {
-    setCurrentImageIndex(index)
-    setIsBeforeImage(isBefore)
-    setIsOpen(true)
-  }
-
-  const closeModal = () => {
-    setIsOpen(false)
-  }
-
-  const navigateNext = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length)
-  }
-
-  const navigatePrevious = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)
-  }
-
-  const toggleBeforeAfter = () => {
-    setIsBeforeImage((prev) => !prev)
-  }
-
-  // Zoom functions
-  const zoomIn = () => {
-    setZoomLevel((prev) => Math.min(prev + 0.25, 3))
-  }
-
-  const zoomOut = () => {
-    setZoomLevel((prev) => Math.max(prev - 0.25, 1))
-  }
-
-  const resetZoom = () => {
-    setZoomLevel(1)
-    setPosition({ x: 0, y: 0 })
-  }
-
-  // Pan functionality
-  const startDrag = (clientX: number, clientY: number) => {
-    if (zoomLevel > 1) {
-      setIsDragging(true)
-      setStartPosition({ x: clientX, y: clientY })
-    }
-  }
-
-  const onDrag = (clientX: number, clientY: number) => {
-    if (!isDragging || zoomLevel <= 1) return
-
-    const dx = clientX - startPosition.x
-    const dy = clientY - startPosition.y
-
-    updatePosition(dx, dy)
-    setStartPosition({ x: clientX, y: clientY })
-  }
-
-  const stopDrag = () => {
-    setIsDragging(false)
-  }
-
-  // Mouse event handlers
-  const handleMouseDown = (e: React.MouseEvent) => {
-    if (zoomLevel > 1) {
-      e.preventDefault()
-      startDrag(e.clientX, e.clientY)
-    }
-  }
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    onDrag(e.clientX, e.clientY)
-  }
-
-  // Touch event handlers
-  const handleTouchStart = (e: React.TouchEvent) => {
-    if (e.touches.length === 1 && zoomLevel > 1) {
-      startDrag(e.touches[0].clientX, e.touches[0].clientY)
-    } else if (e.touches.length === 2) {
-      // Handle pinch zoom
-      e.preventDefault()
-      const touch1 = e.touches[0]
-      const touch2 = e.touches[1]
-      const distance = Math.hypot(touch2.clientX - touch1.clientX, touch2.clientY - touch1.clientY)
-
-      // Store the initial distance for pinch zoom calculation
-      e.currentTarget.dataset.initialPinchDistance = distance.toString()
-    }
-  }
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (e.touches.length === 1 && isDragging) {
-      e.preventDefault() // Prevent scrolling when panning
-      onDrag(e.touches[0].clientX, e.touches[0].clientY)
-    } else if (e.touches.length === 2) {
-      // Handle pinch zoom
-      e.preventDefault()
-
-      const initialDistance = Number.parseFloat(e.currentTarget.dataset.initialPinchDistance || "0")
-      if (initialDistance > 0) {
-        const touch1 = e.touches[0]
-        const touch2 = e.touches[1]
-        const currentDistance = Math.hypot(touch2.clientX - touch1.clientX, touch2.clientY - touch1.clientY)
-
-        // Calculate zoom change
-        const zoomDelta = (currentDistance - initialDistance) / 200
-
-        setZoomLevel((prev) => {
-          const newZoom = Math.max(1, Math.min(3, prev + zoomDelta))
-          return newZoom
-        })
-
-        // Update the initial distance for the next move
-        e.currentTarget.dataset.initialPinchDistance = currentDistance.toString()
-      }
-    }
-  }
-
-  // Update position with bounds checking
-  const updatePosition = (dx: number, dy: number) => {
-    const imageElement = imageRef.current
-    const containerElement = containerRef.current
-
-    if (imageElement && containerElement) {
-      // Calculate the scaled dimensions
-      const scaledWidth = imageElement.offsetWidth * zoomLevel
-      const scaledHeight = imageElement.offsetHeight * zoomLevel
-
-      // Calculate the maximum allowed movement
-      const maxX = Math.max(0, (scaledWidth - containerElement.clientWidth) / 2)
-      const maxY = Math.max(0, (scaledHeight - containerElement.clientHeight) / 2)
-
-      // Calculate new position with bounds
-      const newX = Math.max(-maxX, Math.min(maxX, position.x + dx))
-      const newY = Math.max(-maxY, Math.min(maxY, position.y + dy))
-
-      setPosition({ x: newX, y: newY })
-    }
-  }
-
-  // Mouse wheel zoom
-  const handleWheel = (e: React.WheelEvent) => {
-    if (isMobile) return // Don't interfere with scrolling on mobile
-
-    e.preventDefault()
-    const delta = e.deltaY > 0 ? -0.25 : 0.25
-    setZoomLevel((prev) => {
-      const newZoom = Math.max(1, Math.min(3, prev + delta))
-      return newZoom
-    })
-  }
-
-  // Get current image and description
-  const getCurrentImage = () => {
-    const image = galleryImages[currentImageIndex]
-    return {
-      src: isBeforeImage ? image.before : image.after,
-      alt: isBeforeImage ? image.beforeDesc : image.afterDesc,
-      title: image.title,
-      description: isBeforeImage ? "Before: " + image.beforeDesc : "After: " + image.afterDesc,
-    }
-  }
-
   return (
     <section id="gallery" className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Before & After Gallery</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See the transformation our expert restoration services can achieve. Slide to compare before and after, or
-            click on any image for a closer look.
+            See the transformation our expert restoration services can achieve. Slide to compare before and after.
           </p>
         </div>
 
@@ -418,9 +213,8 @@ export default function Gallery() {
                   <img
                     src={item.after || "/placeholder.svg"}
                     alt={`${item.title} after restoration`}
-                    className="w-full h-full object-cover cursor-pointer"
+                    className="w-full h-full object-cover"
                     loading="lazy"
-                    onClick={() => openModal(index, false)}
                   />
                 </div>
 
@@ -434,21 +228,21 @@ export default function Gallery() {
                   <img
                     src={item.before || "/placeholder.svg"}
                     alt={`${item.title} before restoration`}
-                    className="w-full h-full object-cover cursor-pointer"
+                    className="w-full h-full object-cover"
                     loading="lazy"
-                    onClick={() => openModal(index, true)}
                   />
                 </div>
 
                 {/* Slider Handle */}
                 <div
-                  className="absolute top-0 bottom-0 w-6 -ml-3 flex items-center justify-center cursor-col-resize z-10"
+                  className="absolute top-0 bottom-0 w-6 -ml-3 flex items-center justify-center cursor-col-resize z-10 focus:outline-none"
                   style={{ left: `${sliderPositions[index] || 50}%` }}
                   onMouseDown={(e) => handleSliderMouseDown(e, index)}
                   onTouchStart={(e) => handleSliderMouseDown(e, index)}
+                  tabIndex={0}
                 >
                   <div className="h-full w-1 bg-white"></div>
-                  <div className="absolute bg-white rounded-full w-6 h-6 flex items-center justify-center shadow-md">
+                  <div className="absolute bg-white rounded-full w-6 h-6 flex items-center justify-center shadow-md focus:outline-none focus:ring-2 focus:ring-white/50">
                     <div className="flex items-center">
                       <ArrowLeft className="h-3 w-3 text-gray-700" />
                       <ArrowRight className="h-3 w-3 text-gray-700" />
@@ -478,184 +272,6 @@ export default function Gallery() {
           ))}
         </div>
       </div>
-
-      {/* Improved Modal for Expanded View */}
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-[95vw] md:max-w-[85vw] p-0 bg-black border-0 text-white h-[90vh] flex flex-col">
-          {/* Header with controls */}
-          <div className="flex items-center justify-between p-3 bg-black/80 backdrop-blur-sm">
-            <div className="flex-1">
-              <h3 className="text-lg font-medium">{getCurrentImage().title}</h3>
-              <p className="text-sm text-gray-300 hidden md:block">{getCurrentImage().description}</p>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:bg-white/20"
-                onClick={toggleBeforeAfter}
-                title={isBeforeImage ? "Show After Image" : "Show Before Image"}
-              >
-                {isBeforeImage ? "Before" : "After"}
-              </Button>
-
-              <div className="hidden md:flex items-center gap-1 mx-2">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-white hover:bg-white/20"
-                  onClick={zoomOut}
-                  disabled={zoomLevel <= 1}
-                  title="Zoom Out"
-                >
-                  <ZoomOut className="h-5 w-5" />
-                </Button>
-                <span className="text-sm w-12 text-center">{Math.round(zoomLevel * 100)}%</span>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-white hover:bg-white/20"
-                  onClick={zoomIn}
-                  disabled={zoomLevel >= 3}
-                  title="Zoom In"
-                >
-                  <ZoomIn className="h-5 w-5" />
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-white hover:bg-white/20"
-                  onClick={resetZoom}
-                  disabled={zoomLevel === 1}
-                  title="Reset Zoom"
-                >
-                  <span className="text-xs">1:1</span>
-                </Button>
-              </div>
-
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:bg-white/20"
-                onClick={closeModal}
-                title="Close"
-              >
-                <X className="h-5 w-5" />
-              </Button>
-            </div>
-          </div>
-
-          {/* Image container */}
-          <div className="flex-1 relative overflow-hidden" ref={containerRef}>
-            {/* Navigation buttons */}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-black/50 text-white rounded-full h-10 w-10"
-              onClick={navigatePrevious}
-              title="Previous Image"
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </Button>
-
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-black/50 text-white rounded-full h-10 w-10"
-              onClick={navigateNext}
-              title="Next Image"
-            >
-              <ChevronRight className="h-6 w-6" />
-            </Button>
-
-            {/* Image with zoom/pan */}
-            <div
-              className="w-full h-full flex items-center justify-center"
-              onMouseDown={handleMouseDown}
-              onMouseMove={handleMouseMove}
-              onMouseUp={stopDrag}
-              onMouseLeave={stopDrag}
-              onTouchStart={handleTouchStart}
-              onTouchMove={handleTouchMove}
-              onTouchEnd={stopDrag}
-              onWheel={handleWheel}
-              style={{ touchAction: "none" }}
-            >
-              <img
-                ref={imageRef}
-                src={getCurrentImage().src || "/placeholder.svg"}
-                alt={getCurrentImage().alt}
-                className="max-h-full max-w-full object-contain select-none"
-                style={{
-                  transform: `scale(${zoomLevel})`,
-                  transformOrigin: "center",
-                  transition: isDragging ? "none" : "transform 0.2s ease-out",
-                  cursor: zoomLevel > 1 ? (isDragging ? "grabbing" : "grab") : "zoom-in",
-                  position: "relative",
-                  left: `${position.x}px`,
-                  top: `${position.y}px`,
-                }}
-                draggable="false"
-                onClick={() => {
-                  if (zoomLevel === 1) {
-                    zoomIn()
-                  }
-                }}
-                onDoubleClick={(e) => {
-                  e.preventDefault()
-                  if (zoomLevel > 1) {
-                    resetZoom()
-                  } else {
-                    zoomLevel === 1 && zoomIn()
-                  }
-                }}
-              />
-            </div>
-          </div>
-
-          {/* Mobile controls */}
-          <div className="md:hidden flex items-center justify-between p-2 bg-black/80">
-            <div className="flex items-center gap-1">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-white hover:bg-white/20 h-8 px-2"
-                onClick={zoomOut}
-                disabled={zoomLevel <= 1}
-              >
-                <ZoomOut className="h-4 w-4 mr-1" />
-                <span className="text-xs">Out</span>
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-white hover:bg-white/20 h-8 px-2"
-                onClick={zoomIn}
-                disabled={zoomLevel >= 3}
-              >
-                <ZoomIn className="h-4 w-4 mr-1" />
-                <span className="text-xs">In</span>
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-white hover:bg-white/20 h-8 px-2"
-                onClick={resetZoom}
-                disabled={zoomLevel === 1}
-              >
-                <span className="text-xs">Reset</span>
-              </Button>
-            </div>
-            <span className="text-xs text-gray-300">{Math.round(zoomLevel * 100)}%</span>
-          </div>
-
-          {/* Mobile caption */}
-          <p className="md:hidden text-xs text-gray-300 p-2 bg-black/80 border-t border-gray-800">
-            {getCurrentImage().description}
-          </p>
-        </DialogContent>
-      </Dialog>
     </section>
   )
 }
