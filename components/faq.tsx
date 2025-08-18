@@ -22,12 +22,12 @@ export default function FAQ() {
     {
       question: "How long does the rim restoration process take?",
       answer:
-        "The standard turnaround time is 2-3 business days for a set of four wheels. Premium and custom restorations may take longer. Rush services are available which can reduce the turnaround time to 1-2 business days depending on our current workload.",
+        "The standard turnaround time is 2-3 business days for a set of four wheels. Custom restorations may take longer. Rush services are available which can reduce the turnaround time to 1-2 business days depending on my current workload.",
     },
     {
       question: "Can you repair bent or cracked rims?",
       answer:
-        "No, we do not provide structural repair services.",
+        "No, I do not provide structural repair services.",
     },
     {
       question: "What type of paint do you use?",
@@ -35,9 +35,9 @@ export default function FAQ() {
         "Only premium automotive-grade paint systems including epoxy and 2K primers for superior adhesion and corrosion protection, high performance base coat binders for exceptional color retention, and 2K polyurethane clear coats for outstanding gloss and durability. All paint systems feature advanced UV inhibitors specifically rated for harsh Australian summers and are engineered to be weather and chemical resistant, protecting against road salt, brake dust, and cleaning products.",
     },
     {
-      question: "Do I need to remove my tyres before bringing in my wheels?",
+      question: "Do I need to remove my tyres or rims before bringing in my wheels?",
       answer:
-        "No, you don't need to remove your tyres. Our Budget Restoration service can be performed with tyres on.",
+        "No, you don't need to remove your tyres. Our Budget Restoration service can be performed with tyres on. You are also welcome to leave your vehicle here if you do not have a spare set of rims.",
     },
     {
       question: "What types of finishes can you apply to my rims?",
