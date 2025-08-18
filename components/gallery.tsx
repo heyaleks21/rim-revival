@@ -91,11 +91,11 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/m6bb.jpg",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/m6bbb.jpg",
       beforeDesc:
         "Neglected BMW M6 rims and calipers restored in a bright metallic silver",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/m6a.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8523.JPEG",
       afterDesc:
         "BMW rims transformed with premium metallic gloss silver finish and clear coat protection by Rim Revivals Adelaide",
       title: "Factory Refresh",
@@ -103,9 +103,9 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jjb.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jbbb.jpg",
       beforeDesc:
-        "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
+        "Standard Jeep Cherokee  rims with curb damage and scratches before restoration and caliper paint by Rim Revivals Adelaide",
       after:
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jja.webp",
       afterDesc:
