@@ -53,41 +53,8 @@ export default function Gallery() {
       after:
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/3%20after-ZSHhC4zan5ONmkPxo9KE3NRNJWbbic.webp",
       afterDesc: "Audi rims restored with premium matte gray finish for a modern look by Rim Revivals Adelaide",
-      title: "Rare Wheel Restoration",
-      description: "Factory Aud A5 rims with severe rash and a paint can finish transformed.",
-    },
-    {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/4%20before.JPEG-ZSR8Wma7S3gbiFtCXFhQEYPbbfxN1R.webp",
-      beforeDesc: "Diamond-cut face wheels with oxidation and curb damage before professional restoration in Adelaide",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/4%20after.JPEG-IpIIVPzvgctekD1DAzSLYmch0942qz.webp",
-      afterDesc:
-        "Diamond-cut wheels completely refinished in satin black with machined details by Rim Revivals Adelaide",
-      title: "Premium Style Upgrade",
-      description: "Diamond-cut HSV rims resurfaced and refinished in satin black after tyre removal.",
-    },
-    {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/5%20before.JPEG-Mz4C4lG1Ckq6q5kyxpK8dzr3XbI2ik.webp",
-      beforeDesc:
-        "Basic 5-spoke factory wheels with worn silver finish before restoration in Adelaide, South Australia",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/5%20after.JPEG-qvvt77i4MkNItcSOoxRmD0EaPaUafg.webp",
-      afterDesc: "5-spoke wheels transformed with deep gloss black finish for a custom look by Rim Revivals Adelaide",
-      title: "Classic Design Refresh",
-      description: "Basic 5-spoke factory wheels transformed with deep gloss black finish for a blacked-out look.",
-    },
-    {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/6%20before.JPEG-1Vjq7D4MtC6w8gWesS0Q7DC7z0Egea.webp",
-      beforeDesc:
-        "Factory silver Holden sport wheels with multi-spoke design before professional restoration in Adelaide",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/6%20after.JPEG-31mZy7koWNFgS9RoJ7CF3gsbuI7nvp.webp",
-      afterDesc: "Holden sport wheels transformed with mirror-finish gloss black by Rim Revivals Adelaide",
-      title: "Performance Wheel Upgrade",
-      description: "Factory wheels transformed with mirror-finish gloss black for a lasting premium appearance.",
+      title: "Rare Wheel Refresh",
+      description: "Factory Audi A5 rims with severe rash and a paint can finish transformed.",
     },
     {
       before:
@@ -122,8 +89,41 @@ export default function Gallery() {
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/penta.webp",
       afterDesc:
         "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
-      title: "Budget original restoration",
+      title: "Budget Original Restoration",
       description: "Genuine HSV rims with failing diamond cut finish polished to retain factory look.",
+    },
+    {
+      before:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/4%20before.JPEG-ZSR8Wma7S3gbiFtCXFhQEYPbbfxN1R.webp",
+      beforeDesc: "Diamond-cut face wheels with oxidation and curb damage before professional restoration in Adelaide",
+      after:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/4%20after.JPEG-IpIIVPzvgctekD1DAzSLYmch0942qz.webp",
+      afterDesc:
+        "Diamond-cut wheels completely refinished in satin black with machined details by Rim Revivals Adelaide",
+      title: "Premium Style Upgrade",
+      description: "Diamond-cut HSV rims resurfaced and refinished in satin black after tyre removal.",
+    },
+    {
+      before:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/5%20before.JPEG-Mz4C4lG1Ckq6q5kyxpK8dzr3XbI2ik.webp",
+      beforeDesc:
+        "Basic 5-spoke factory wheels with worn silver finish before restoration in Adelaide, South Australia",
+      after:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/5%20after.JPEG-qvvt77i4MkNItcSOoxRmD0EaPaUafg.webp",
+      afterDesc: "5-spoke wheels transformed with deep gloss black finish for a custom look by Rim Revivals Adelaide",
+      title: "Classic Design Refresh",
+      description: "Basic 5-spoke factory wheels transformed with deep gloss black finish for a blacked-out look.",
+    },
+    {
+      before:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/6%20before.JPEG-1Vjq7D4MtC6w8gWesS0Q7DC7z0Egea.webp",
+      beforeDesc:
+        "Factory silver Holden sport wheels with multi-spoke design before professional restoration in Adelaide",
+      after:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/6%20after.JPEG-31mZy7koWNFgS9RoJ7CF3gsbuI7nvp.webp",
+      afterDesc: "Holden sport wheels transformed with mirror-finish gloss black by Rim Revivals Adelaide",
+      title: "Performance Wheel Upgrade",
+      description: "Factory wheels transformed with mirror-finish gloss black for a lasting premium appearance.",
     },
   ]
 
