@@ -20,7 +20,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+    <section id="home" className="relative h-screen overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 z-10" />
         <div className="relative w-full h-full">
@@ -35,14 +35,15 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="container relative z-10">
+      <div className="container relative z-10 h-full flex items-center">
         <div className="max-w-2xl text-white text-center sm:text-left mx-auto sm:mx-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Adelaide's Premier Rim Restoration Specialist
           </h1>
           <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-            Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.
-
+            Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the
+            time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that
+            won't dent your wallet.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
             <Button
