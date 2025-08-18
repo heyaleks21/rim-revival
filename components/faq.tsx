@@ -52,12 +52,12 @@ export default function FAQ() {
     {
       question: "Do you offer a warranty on your work?",
       answer:
-        "Yes, I stand behind my work. THe Budget Restoration comes with a 6-month warranty against peeling or flaking. Premium Restoration includes a 12-month warranty, and Custom Refinishing includes an 18-month warranty. Warranties cover manufacturing defects but do not cover damage from road hazards, improper care, or accidents.",
+        "Yes, I stand behind my work. The Budget Restoration comes with a 6-month warranty against peeling or flaking. Premium Restoration includes a 12-month warranty, and Custom Refinishing includes an 18-month warranty. Warranties cover manufacturing defects but do not cover damage from road hazards, improper care, or accidents.",
     },
     {
       question: "How should I care for my newly restored rims?",
       answer:
-        "To maintain your restored rims, I recommend regular cleaning with pH-neutral wheel cleaners (avoid acidic cleaners), using soft microfiber cloths, and applying a wheel sealant every 3-4 months. Avoid automatic car washes with harsh brushes and be cautious around curbs to prevent damage. It is recommended to not apply any sort of wax or sealant for 30-60 days after restoration.",
+        "To maintain your restored rims, I recommend regular cleaning with pH-neutral wheel cleaners (avoid acidic cleaners), using soft microfiber cloths, and applying a wheel sealant every 3-4 months. Avoid automatic car washes with harsh brushes and be cautious around curbs to prevent damage. It is recommended to not apply any sort of wax or sealant for 30-60 days after restoration. If you clean your wheels regulary, you shouldn't have to use more than soap, water and gentle agitation.",
     },
     {
       question: "Do you offer mobile services or pickup/delivery?",
