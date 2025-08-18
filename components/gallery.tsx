@@ -54,7 +54,7 @@ export default function Gallery() {
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/3%20after-ZSHhC4zan5ONmkPxo9KE3NRNJWbbic.webp",
       afterDesc: "Audi rims restored with premium matte gray finish for a modern look by Rim Revivals Adelaide",
       title: "Rare Wheel Refresh",
-      description: "Factory Audi A5 rims with severe rash and a paint can finish transformed.",
+      description: "Factory Audi rims with severe rash and a paint can finish transformed.",
     },
     {
       before:

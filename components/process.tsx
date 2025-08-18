@@ -33,12 +33,12 @@ export default function Process() {
     {
       icon: <Truck className="h-10 w-10 text-[#0066B1]" />,
       title: "Drop-off or Pickup",
-      description: "Drop off your wheels or use our convenient pickup service.",
+      description: "Drop off your wheels, car or use our convenient pickup service.",
     },
     {
       icon: <Wrench className="h-10 w-10 text-[#0066B1]" />,
       title: "Restoration Process",
-      description: "Your rims are restored using a proven multi-step process.",
+      description: "Your rims are restored using a proven multi-step process, with updates along the way.",
     },
     {
       icon: <ThumbsUp className="h-10 w-10 text-[#0066B1]" />,
