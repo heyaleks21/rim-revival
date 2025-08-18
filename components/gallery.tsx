@@ -82,11 +82,11 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/pentb.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/pentbb.jpg",
       beforeDesc:
         "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/penta.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/pentaa.jpg",
       afterDesc:
         "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
       title: "Budget Original Restoration",
