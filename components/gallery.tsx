@@ -54,7 +54,7 @@ export default function Gallery() {
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/3%20after-ZSHhC4zan5ONmkPxo9KE3NRNJWbbic.webp",
       afterDesc: "Audi rims restored with premium matte gray finish for a modern look by Rim Revivals Adelaide",
       title: "Rare Wheel Restoration",
-      description: "Factory VF SSV Redline rims with severe rash and a paint can finish transformed.",
+      description: "Factory Aud A5 rims with severe rash and a paint can finish transformed.",
     },
     {
       before:
@@ -65,7 +65,7 @@ export default function Gallery() {
       afterDesc:
         "Diamond-cut wheels completely refinished in satin black with machined details by Rim Revivals Adelaide",
       title: "Premium Style Upgrade",
-      description: "Diamond-cut VE HSV Pentagons resurfaced and refinished in satin black after tyre removal.",
+      description: "Diamond-cut HSV rims resurfaced and refinished in satin black after tyre removal.",
     },
     {
       before:
@@ -91,39 +91,39 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20before.JPEG-XwD6OUSGRHNXggZFYrlsrLbQC0Kmfs.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/m6bb.jpg",
       beforeDesc:
-        "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
+        "Neglected BMW M6 rims and calipers restored in a bright metallic silver",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20after.JPEG-WoJ7idkpqd7fYO3NhOCw8tUGgISjfZ.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/m6a.webp",
       afterDesc:
-        "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
+        "BMW rims transformed with premium metallic gloss silver finish and clear coat protection by Rim Revivals Adelaide",
       title: "Factory Refresh",
-      description: "Standard factory rims given a premium black makeover for enhanced style.",
+      description: "Neglected BMW M6 rims and calipers restored in a bright metallic silver.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20before.JPEG-XwD6OUSGRHNXggZFYrlsrLbQC0Kmfs.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jjb.webp",
       beforeDesc:
         "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20after.JPEG-WoJ7idkpqd7fYO3NhOCw8tUGgISjfZ.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jja.webp",
       afterDesc:
         "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
-      title: "Complete Transformation",
-      description: "Damaged rims completely restored with professional-grade black finish.",
+      title: "Black Out & Caliper Paint",
+      description: "Standard Jeep rims painted in semi-gloss black and calipers in Brembo red.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20before.JPEG-XwD6OUSGRHNXggZFYrlsrLbQC0Kmfs.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/pentb.webp",
       beforeDesc:
         "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20after.JPEG-WoJ7idkpqd7fYO3NhOCw8tUGgISjfZ.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/penta.webp",
       afterDesc:
         "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
-      title: "Professional Restoration",
-      description: "Expert restoration bringing damaged rims back to showroom condition.",
+      title: "Budget original restoration",
+      description: "Genuine HSV rims with failing diamond cut finish polished to retain factory look.",
     },
   ]
 
