@@ -191,7 +191,7 @@ export default function Gallery() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Before & After Gallery</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See the transformation our expert restoration services can achieve. Slide to compare before and after.
+            See the transformation my restoration services can achieve. Slide to compare before and after.
           </p>
         </div>
 

@@ -25,7 +25,7 @@ export default function PaintTypes() {
       icon: <Shield className="h-10 w-10 text-[#0066B1]" />,
       title: "Epoxy and 2K Primers",
       description:
-        "We use a combination of high-adhesion epoxy primers for superior metal bonding and corrosion protection, along with 2K urethane primers for excellent filling properties and a perfect foundation for the color coat.",
+        "If required, a combination of high-adhesion epoxy primers are used for superior metal bonding and corrosion protection, along with 2K urethane primers for excellent filling properties and a perfect foundation for the color coat.",
     },
     {
       icon: <Palette className="h-10 w-10 text-[#0066B1]" />,
@@ -43,13 +43,13 @@ export default function PaintTypes() {
       icon: <Sun className="h-10 w-10 text-[#0066B1]" />,
       title: "UV Protection",
       description:
-        "All our paints and clear coats feature advanced UV inhibitors specifically rated for harsh Australian summers, preventing fading and deterioration.",
+        "All paints and clear coats feature advanced UV inhibitors specifically rated for harsh Australian summers, preventing fading and deterioration.",
     },
     {
       icon: <Droplet className="h-10 w-10 text-[#0066B1]" />,
       title: "Weather and Chemical Resistant",
       description:
-        "Our finishing systems are engineered to withstand extreme weather conditions, road salt, brake dust, chemicals, and cleaning products while maintaining their integrity and appearance.",
+        "Automotive-grade finishing systems are engineered to withstand extreme weather conditions, road salt, brake dust, chemicals, and cleaning products while maintaining their integrity and appearance.",
     },
   ]
 
@@ -59,7 +59,7 @@ export default function PaintTypes() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Premium Paint Systems</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We use only the highest quality automotive-grade paints and coatings to ensure your rims look fantastic and
+            Only the highest quality automotive-grade paints and coatings are used to ensure your rims look fantastic and
             stay protected for years to come.
           </p>
         </div>
@@ -70,14 +70,14 @@ export default function PaintTypes() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="bg-[#0066B1]/10 p-8 flex items-center justify-center">
                   <div className="max-w-sm text-center">
-                    <h3 className="text-2xl font-bold mb-4">What Type of Paint Do We Use?</h3>
+                    <h3 className="text-2xl font-bold mb-4">What Type of Paint Do You Use?</h3>
                     <p className="text-muted-foreground mb-6">
-                      We use premium automotive-grade paint systems including epoxy and 2K primers, high performance
-                      base coat binders, and 2K polyurethane clear coats. All our paints feature advanced UV inhibitors
+                      Premium automotive-grade paint systems including epoxy and 2K primers, high performance
+                      base coat binders, and 2K polyurethane clear coats. All paint systems feature advanced UV inhibitors
                       specifically rated for harsh Australian summers.
                     </p>
                     <p className="text-muted-foreground mb-6">
-                      Our professional-grade finishes are engineered to be weather and chemical resistant, protecting
+                      Automotive-grade finishes are engineered to be weather and chemical resistant, protecting
                       against road salt, brake dust, and cleaning products while maintaining their integrity and
                       appearance for years to come.
                     </p>
@@ -87,7 +87,7 @@ export default function PaintTypes() {
                         className="bg-[#FF0000] hover:bg-[#FF0000]/90 text-white flex items-center justify-center gap-2"
                       >
                         <ImageIcon className="h-4 w-4" />
-                        See Examples in Our Gallery
+                        See Examples
                       </Button>
                     </div>
                   </div>

@@ -473,7 +473,7 @@ export default function QuoteForm() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Your Free Quote</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Fill out the form below and we'll get back to you with a personalized quote for your rim restoration needs.
+            Fill out the form below and I'll get back to you with a personalized quote for your rim restoration needs.
           </p>
         </div>
 
@@ -663,7 +663,7 @@ export default function QuoteForm() {
                     Rim Photos (Optional)
                   </Label>
                   <p className="text-sm text-muted-foreground">
-                    Upload up to {MAX_IMAGES} photos of your rims to help us provide an accurate quote.
+                    Upload up to {MAX_IMAGES} photos of your rims to help me provide an accurate quote.
                   </p>
 
                   {/* Image Previews */}

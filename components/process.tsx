@@ -22,7 +22,7 @@ export default function Process() {
     {
       icon: <Camera className="h-10 w-10 text-[#0066B1]" />,
       title: "Submit Photos",
-      description: "Send us photos of your damaged rims through our quote form.",
+      description: "Send photos of your damaged rims through the quote form.",
       linkTo: "quote",
     },
     {
@@ -38,7 +38,7 @@ export default function Process() {
     {
       icon: <Wrench className="h-10 w-10 text-[#0066B1]" />,
       title: "Restoration Process",
-      description: "Our experts restore your rims using our proven multi-step process.",
+      description: "Your rims are restored using a proven multi-step process.",
     },
     {
       icon: <ThumbsUp className="h-10 w-10 text-[#0066B1]" />,
@@ -51,7 +51,7 @@ export default function Process() {
     <section id="process" className="py-20 bg-gray-100">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Restoration Process</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">The Restoration Process</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A simple, hassle-free process to get your wheels looking like new again.
           </p>

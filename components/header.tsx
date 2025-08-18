@@ -136,7 +136,7 @@ export default function Header() {
             {[
               { id: "services", label: "Services" },
               { id: "paint-types", label: "Paint Systems" },
-              { id: "process", label: "Our Process" },
+              { id: "process", label: "The Process" },
               { id: "gallery", label: "Gallery" },
               { id: "testimonials", label: "Testimonials" },
               { id: "faq", label: "FAQ" },
