@@ -92,7 +92,7 @@ export default function Footer() {
                   onClick={(e) => scrollToSection("process", e)}
                   className="text-sm text-gray-300 hover:text-white transition-colors"
                 >
-                  Our Process
+                  The Process
                 </button>
               </li>
             </ul>

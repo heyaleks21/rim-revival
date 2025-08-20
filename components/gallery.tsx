@@ -41,7 +41,7 @@ export default function Gallery() {
       after:
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/2%20after.JPEG-yFrSUCPVS5ejMEoNEx2e2jarpEWWLN.webp",
       afterDesc:
-        "Holden multi-spoke wheels refinished in high-gloss black with polished spoke edges by Rim Revivals Adelaide",
+        "Holden multi-spoke wheels refinished in high-gloss black.",
       title: "Sport Wheel Restoration",
       description: "Multi-spoke rims with clear coat failure and light rash refinished in high-gloss black.",
     },
@@ -90,7 +90,7 @@ export default function Gallery() {
       afterDesc:
         "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
       title: "Budget Original Restoration",
-      description: "Origin Holden rims with failing diamond cut finish polished to retain factory look.",
+      description: "Original Holden rims with failing diamond cut finish restored in a light metallic gunmetal grey.",
     },
     {
       before:
