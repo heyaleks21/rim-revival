@@ -70,11 +70,11 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jbbb.jpg",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jjbb%20%281%29.webp",
       beforeDesc:
         "Standard Jeep Cherokee  rims with curb damage and scratches before restoration and caliper paint by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jja.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jjaa.webp",
       afterDesc:
         "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
       title: "Black Out & Caliper Paint",
@@ -82,15 +82,15 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/pentbb.jpg",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_7931.JPEG",
       beforeDesc:
         "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/pentaa.jpg",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_7949%20%281%29.jpg",
       afterDesc:
         "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
       title: "Budget Original Restoration",
-      description: "Genuine HSV rims with failing diamond cut finish polished to retain factory look.",
+      description: "Origin Holden rims with failing diamond cut finish polished to retain factory look.",
     },
     {
       before:
