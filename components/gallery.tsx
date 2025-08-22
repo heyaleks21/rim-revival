@@ -89,7 +89,7 @@ export default function Gallery() {
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfaa%20%281%29.webp",
       afterDesc:
         "Alfa Romeo rims and calipers transformed with an Anthracite grey and Alfa red finish.",
-      title: "Budget Original Restoration",
+      title: "Premium Original Restoration",
       description: "Alfa Romeo rims transformed with an Anthracite grey finish and calipers in Alfa red.",
     },
     {
