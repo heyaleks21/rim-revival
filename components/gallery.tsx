@@ -82,15 +82,15 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_7931.JPEG",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfab.webp",
       beforeDesc:
-        "Factory silver Holden rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
+        "Factory Alfa Romeo rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_7949%20%281%29.jpg",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfaa%20%281%29.webp",
       afterDesc:
-        "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
+        "Alfa Romeo rims and calipers transformed with an Anthracite grey and Alfa red finish.",
       title: "Budget Original Restoration",
-      description: "Original Holden rims with failing diamond cut finish restored in a light metallic gunmetal grey.",
+      description: "Alfa Romeo rims transformed with an Anthracite grey finish and calipers in Alfa red.",
     },
     {
       before:
