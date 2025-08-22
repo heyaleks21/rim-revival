@@ -58,15 +58,15 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8553.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8553.JPEG",
       beforeDesc:
         "Neglected BMW M6 rims and calipers restored in a bright metallic silver",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8523%20%281%29.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8523%20%281%29.jpg",
       afterDesc:
         "BMW rims transformed with premium metallic gloss silver finish and clear coat protection by Rim Revivals Adelaide",
       title: "Factory Refresh",
-      description: "Neglected BMW M6 rims and calipers restored in a bright metallic silver.",
+      description: "Neglected BMW M6 rims restored in a bright metallic silver with a caliper and hub refresh.",
     },
     {
       before:
