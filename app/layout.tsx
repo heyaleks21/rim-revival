@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Enhanced metadata with improved SEO
 export const metadata: Metadata = {
-  title: "Rim Repairs Adelaide | Rim Revivals - Professional Wheel Restoration",
+  title: "Rim Revivals Adelaide | Professional Wheel & Alloy Rim Restoration",
   description:
     "Adelaide's premier wheel restoration specialists. Expert repairs for curb damage, scratches & corrosion on all alloy rims. Based in Adelaide, South Australia with services across the metro area.",
   keywords:
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     google: "FZ0MFXVltChFYYXUmmEI1-Msljs61HLRFjBCbalu1hY",
   },
   openGraph: {
-    title: "Rim Repairs Adelaide | Rim Revivals - Professional Wheel Restoration",
+    title: "Rim Revivals Adelaide | Professional Wheel & Alloy Rim Restoration",
     description:
       "Adelaide's premier wheel restoration specialists. Expert repairs for curb damage, scratches & corrosion on all alloy rims. Based in Adelaide, South Australia with services across the metro area.",
     url: "https://www.rimrevivals.com.au",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rim Repairs Adelaide | Rim Revivals - Professional Wheel Restoration",
+    title: "Rim Revivals Adelaide | Professional Wheel & Alloy Rim Restoration",
     description:
       "Adelaide's premier wheel restoration specialists. Expert repairs for curb damage, scratches & corrosion on all alloy rims. Based in Adelaide, South Australia.",
     images: [

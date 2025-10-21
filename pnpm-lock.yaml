@@ -53,6 +53,9 @@ importers:
       tailwind-merge:
         specifier: ^2.5.5
         version: 2.5.5
+      tailwindcss-animate:
+        specifier: ^1.0.7
+        version: 1.0.7(tailwindcss@3.4.17)
     devDependencies:
       '@types/node':
         specifier: ^22
@@ -64,7 +67,7 @@ importers:
         specifier: ^19
         version: 19.1.6(@types/react@19.1.8)
       autoprefixer:
-        specifier: ^10.4.16
+        specifier: ^10.0.1
         version: 10.4.16(postcss@8.5.0)
       eslint:
         specifier: ^8
@@ -76,11 +79,8 @@ importers:
         specifier: ^8.5
         version: 8.5.0
       tailwindcss:
-        specifier: ^3.4.17
+        specifier: ^3.3.0
         version: 3.4.17
-      tailwindcss-animate:
-        specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.4.17)
       typescript:
         specifier: ^5
         version: 5.0.2
