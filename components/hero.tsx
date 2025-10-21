@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 z-10" />
         <div className="relative w-full h-full">
           <Image
-            src="https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/pexels-redyar-rzgar-1257188192-30932163.jpg-nYLhj04hbBXkyyuVRpR6gE9kAjIIKB.webp"
+            src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
             alt="Luxury BMW wheel with premium alloy rim restoration by Rim Revivals Adelaide"
             fill
             priority

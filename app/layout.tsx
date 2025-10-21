@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Enhanced metadata with improved SEO
 export const metadata: Metadata = {
-  title: "Rim Revivals Adelaide | Professional Wheel & Alloy Rim Restoration",
+  title: "Rim Revivals Adelaide | Wheel & Caliper Painting",
   description:
     "Adelaide's premier wheel restoration specialists. Expert repairs for curb damage, scratches & corrosion on all alloy rims. Based in Adelaide, South Australia with services across the metro area.",
   keywords:
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     google: "FZ0MFXVltChFYYXUmmEI1-Msljs61HLRFjBCbalu1hY",
   },
   openGraph: {
-    title: "Rim Revivals Adelaide | Professional Wheel & Alloy Rim Restoration",
+    title: "Rim Revivals Adelaide | Wheel & Caliper Painting",
     description:
       "Adelaide's premier wheel restoration specialists. Expert repairs for curb damage, scratches & corrosion on all alloy rims. Based in Adelaide, South Australia with services across the metro area.",
     url: "https://www.rimrevivals.com.au",
-    siteName: "Rim Revivals Adelaide",
+    siteName: "Rim Revivals",
     locale: "en_AU",
     type: "website",
     images: [
@@ -60,6 +60,7 @@ export const metadata: Metadata = {
       type: "image/svg+xml",
     },
   },
+  applicationName: "Rim Revivals",
     generator: 'v0.app'
 }
 
@@ -79,7 +80,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "AutoRepair",
-              name: "Rim Revivals Adelaide",
+              name: "Rim Revivals",
+              alternateName: "Rim Revivals Adelaide",
               description:
                 "Adelaide's premier wheel restoration specialists. Expert repairs for curb damage, scratches & corrosion on all alloy rims. Based in Adelaide, South Australia with services across the metro area.",
               image:
