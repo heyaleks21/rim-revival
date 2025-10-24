@@ -8,13 +8,13 @@ import { Paintbrush, Shield, Zap, Check } from "lucide-react"
 export const metadata: Metadata = {
   title: "Brake Caliper Painting Adelaide | Professional Caliper Refinishing",
   description:
-    "Budget brake caliper painting in Adelaide. High-temperature paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance.",
+    "Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance.",
   keywords:
     "brake caliper painting Adelaide, caliper refinishing, Brembo red calipers, custom caliper colors, high temperature caliper paint",
   openGraph: {
     title: "Brake Caliper Painting Adelaide | Budget Caliper Refinishing",
     description:
-      "Budget brake caliper painting in Adelaide with high-temperature paint in custom colors to complement your wheels.",
+      "Budget brake caliper painting in Adelaide with high-temperature 2k paint in custom colors to complement your wheels.",
     url: "https://www.rimrevivals.com.au/caliper-painting",
   },
 }
@@ -68,8 +68,8 @@ export default function CaliperPainting() {
       before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_9157.webp",
       beforeDesc: "BMW M6 calipers and hub before refresh",
       after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_9112.JPEG",
-      afterDesc: "BMW M6 calipers restored with wheel refinish",
-      title: "BMW Caliper & Hub Refresh",
+      afterDesc: "WRX calipers restored in Porsche Acid Green",
+      title: "WRX Caliper Refresh",
       description: "Complete caliper and hub restoration.",
     },
   ]
@@ -77,7 +77,7 @@ export default function CaliperPainting() {
   const popularColors = [
     { name: "Brembo Red", desc: "Classic performance brake caliper red" },
     { name: "BMW M Blue", desc: "Iconic BMW Motorsport blue" },
-    { name: "Porsche Acid Green", desc: "Distinctive Porsche sport yellow" },
+    { name: "Porsche Acid Green", desc: "Distinctive Porsche sport green" },
     { name: "Mercedes Silver", desc: "Elegant Mercedes-Benz silver" },
     { name: "Alfa Romeo Red", desc: "Traditional Alfa Rosso red" },
     { name: "Audi Silver", desc: "Modern Audi sport silver" },
@@ -119,7 +119,7 @@ export default function CaliperPainting() {
                 href="#gallery"
                 className="bg-transparent border border-white text-white hover:bg-white/10 text-base px-6 py-3 rounded-md font-medium transition-colors"
               >
-                View My Work
+                Before & After Gallery
               </a>
             </div>
           </div>
@@ -234,9 +234,9 @@ export default function CaliperPainting() {
                       3
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">High-Temperature Paint Application</h3>
+                      <h3 className="font-semibold text-lg mb-2">High-Temperature 2k Paint Application</h3>
                       <p className="text-muted-foreground">
-                        Multiple thin coats of specialized 2k high-temperature brake caliper paint are applied for even
+                        Multiple coats of specialized 2k high-temperature brake caliper paint are applied for even
                         coverage and durability.
                       </p>
                     </div>

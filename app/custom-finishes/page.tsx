@@ -52,7 +52,7 @@ export default function CustomFinishes() {
       beforeDesc: "Alfa Romeo calipers before refinishing",
       after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfaa%20%281%29.webp",
       afterDesc: "Alfa Romeo calipers in signature Alfa red",
-      title: "Custom Ferarri Colours",
+      title: "Premium Ferarri Colour",
       description: "Alfa Romeo rims restored in a custom Ferarri colour.",
     },
     {
@@ -102,13 +102,13 @@ export default function CustomFinishes() {
                 href="#quote"
                 className="bg-[#FF0000] text-white hover:bg-[#FF0000]/90 text-base px-6 py-3 rounded-md font-medium transition-colors"
               >
-                Request Custom Quote
+                Request A Quote
               </a>
               <a
                 href="#gallery"
                 className="bg-transparent border border-white text-white hover:bg-white/10 text-base px-6 py-3 rounded-md font-medium transition-colors"
               >
-                View Custom Work
+                Before & After Gallery
               </a>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function CustomFinishes() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Consultation & Color Selection</h3>
                       <p className="text-muted-foreground">
-                        I discuss your vision, show you samples, and help you choose the perfect finish for your wheels
+                        After discussing your vision, I'll show you samples and help you choose the perfect finish for your wheels
                         and vehicle style.
                       </p>
                     </div>
@@ -259,7 +259,7 @@ export default function CustomFinishes() {
                       2
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">Complete Strip & Preparation</h3>
+                      <h3 className="font-semibold text-lg mb-2">Preparation</h3>
                       <p className="text-muted-foreground">
                         Tires are removed (optional), wheels are stripped if needed, and all damage is repaired
                         to create the perfect foundation.
@@ -279,7 +279,7 @@ export default function CustomFinishes() {
                       <h3 className="font-semibold text-lg mb-2">Premium Paint Application</h3>
                       <p className="text-muted-foreground">
                         Multiple coats of epoxy primer, your custom color, and premium clear coat are applied in a
-                        controlled environment.
+                        controlled environment as needed.
                       </p>
                     </div>
                   </div>
@@ -295,7 +295,7 @@ export default function CustomFinishes() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Finishing & Tire Fitting</h3>
                       <p className="text-muted-foreground">
-                        After curing, wheels are inspected, polished if needed, and tires are professionally mounted and
+                        After curing, the wheels are inspected and tires are professionally mounted and
                         balanced for perfect performance.
                       </p>
                     </div>

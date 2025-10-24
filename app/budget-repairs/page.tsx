@@ -112,7 +112,7 @@ export default function BudgetRepairs() {
                 href="#gallery"
                 className="bg-transparent border border-white text-white hover:bg-white/10 text-base px-6 py-3 rounded-md font-medium transition-colors"
               >
-                View Results
+                Before & After Gallery
               </a>
             </div>
           </div>

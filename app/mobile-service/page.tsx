@@ -25,7 +25,7 @@ export default function MobileService() {
       icon: <Truck className="h-8 w-8 text-[#0066B1]" />,
       title: "Pickup & Delivery",
       description:
-        "We collect your wheels from your location and return them when the work is complete - all within the Adelaide metro area.",
+        "I collect your wheels from your location and return them when the work is complete - all within the Adelaide metro area.",
     },
     {
       icon: <MapPin className="h-8 w-8 text-[#0066B1]" />,
@@ -149,7 +149,7 @@ export default function MobileService() {
                 href="#gallery"
                 className="bg-transparent border border-white text-white hover:bg-white/10 text-base px-6 py-3 rounded-md font-medium transition-colors"
               >
-                View My Work
+                Before & After Gallery
               </a>
             </div>
           </div>
@@ -262,9 +262,9 @@ export default function MobileService() {
       <section className="py-20 bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">I Service All Adelaide Metro Areas</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Servicing All Adelaide Metro Areas</h2>
             <p className="text-center text-muted-foreground mb-8">
-              My mobile pickup and delivery service covers the entire Adelaide metropolitan area including:
+              Mobile pickup and delivery service covering the entire Adelaide metropolitan area including:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
               {serviceAreas.map((area, index) => (
@@ -275,7 +275,7 @@ export default function MobileService() {
               ))}
             </div>
             <p className="text-center text-muted-foreground mt-8 text-sm">
-              Don't see your suburb? Contact us - I may still be able to service your area!
+              Don't see your suburb? Contact me - I may still be able to service your area!
             </p>
           </div>
         </div>
