@@ -37,8 +37,10 @@ const MAX_TOTAL_SIZE = 8 * 1024 * 1024
 const serviceOptions = {
   "Budget Restoration": [
      "Minor scratch and rash repair",
-        "Precise paint code matching (for solid gloss colors)",
+        "Paint code matching (for solid gloss colors)",
         "Durable gloss clear coat application",
+        "Vehicle drop-off and collection",
+        "Brake caliper painting",
   ],
   "Premium Restoration": [
    "Premium metallic paint options",
@@ -47,12 +49,18 @@ const serviceOptions = {
         "Deep scratch and extensive curb rash repair",
         "Inside barrels painted for a complete look",
         "Vehicle drop-off and collection",
+        "Brake caliper painting",
   ],
   "Custom Refinishing": [
-    "Professional tire removal, fitting, and rebalance",
+    "Tire removal, fitting, and rebalance",
     "Specialty finishes (e.g., shadow chrome, pearl, two-tone)",
-    "Brake caliper painting",
     "Polished metal finishes",
+    "Vehicle drop-off and collection",
+    "Brake caliper painting",
+  ],
+   "Brake Calipers Only": [
+    "Vehicle drop-off and collection",
+    "Brake caliper painting",
   ],
 }
 
