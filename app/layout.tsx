@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Enhanced metadata with improved SEO
 export const metadata: Metadata = {
-  title: "Rim Revivals Adelaide | Wheel & Caliper Painting",
+  title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
   description:
     "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.",
   keywords:
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     google: "FZ0MFXVltChFYYXUmmEI1-Msljs61HLRFjBCbalu1hY",
   },
   openGraph: {
-    title: "Rim Revivals Adelaide | Wheel & Caliper Painting",
+    title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
     description:
-      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
+      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.",
     url: "https://www.rimrevivals.com.au",
     siteName: "Rim Revivals",
     locale: "en_AU",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rim Revivals Adelaide | Professional Wheel & Alloy Rim Restoration",
+    title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
     description:
-      "Adelaide's premier wheel restoration specialists. Expert repairs for curb damage, scratches & corrosion on all alloy rims. Based in Adelaide, South Australia.",
+      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/pexels-redyar-rzgar-1257188192-30932163.jpg-5q5xV7rLgwSneYAoRHxbJmPNxUo0by.webp",
     ],
@@ -83,7 +83,7 @@ export default function RootLayout({
               name: "Rim Revivals",
               alternateName: "Rim Revivals Adelaide",
               description:
-                "Adelaide's premier wheel restoration specialists. Expert repairs for curb damage, scratches & corrosion on all alloy rims. Based in Adelaide, South Australia with services across the metro area.",
+                "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
               image:
                 "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//rim-revivals-logo-white.svg",
               logo: "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//rim-revivals-logo-white.svg",
