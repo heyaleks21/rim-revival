@@ -95,7 +95,7 @@ export default function Testimonials() {
             </div>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Read what our customers have to say about their rim restoration experience with Rim Revivals.
+            Read what customers have to say about their rim restoration experience with Rim Revivals.
           </p>
           <a
             href="https://www.google.com/maps/place/Rim+Revivals/@-34.8632193,138.6011185,17z/data=!4m18!1m9!3m8!1s0x6ab0c98eda01bfe7:0x3f5ef50fba93f6ee!2sRim+Revivals!8m2!3d-34.8632193!4d138.6011185!9m1!1b1!16s%2Fg%2F11ygyjmcng!3m7!1s0x6ab0c98eda01bfe7:0x3f5ef50fba93f6ee!8m2!3d-34.8632193!4d138.6011185!9m1!1b1!16s%2Fg%2F11ygyjmcng?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
