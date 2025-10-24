@@ -84,7 +84,7 @@ export default function CustomFinishes() {
           <div className="relative w-full h-full">
             <img
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-              alt="Luxury BMW wheel with premium alloy rim restoration by Rim Revivals Adelaide"
+              alt="Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing."
               className="w-full h-full object-cover"
             />
           </div>

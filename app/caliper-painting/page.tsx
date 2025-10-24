@@ -94,7 +94,7 @@ export default function CaliperPainting() {
           <div className="relative w-full h-full">
             <img
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-              alt="Luxury BMW wheel with premium alloy rim restoration by Rim Revivals Adelaide"
+              alt="Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance.e"
               className="w-full h-full object-cover"
             />
           </div>

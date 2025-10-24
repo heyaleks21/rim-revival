@@ -88,7 +88,7 @@ export default function BudgetRepairs() {
           <div className="relative w-full h-full">
             <img
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-              alt="Luxury BMW wheel with premium alloy rim restoration by Rim Revivals Adelaide"
+              alt="Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results."
               className="w-full h-full object-cover"
             />
           </div>

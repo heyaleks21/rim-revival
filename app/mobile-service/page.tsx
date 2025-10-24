@@ -124,7 +124,7 @@ export default function MobileService() {
           <div className="relative w-full h-full">
             <img
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-              alt="Luxury BMW wheel with premium alloy rim restoration by Rim Revivals Adelaide"
+              alt="Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience.e"
               className="w-full h-full object-cover"
             />
           </div>
