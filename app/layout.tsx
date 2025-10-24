@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rim Revivals Adelaide | Wheel & Caliper Painting",
     description:
-      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.",
+      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
     url: "https://www.rimrevivals.com.au",
     siteName: "Rim Revivals",
     locale: "en_AU",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/pexels-redyar-rzgar-1257188192-30932163.jpg-5q5xV7rLgwSneYAoRHxbJmPNxUo0by.webp",
         width: 1920,
         height: 1280,
-        alt: "Luxury BMW wheel with premium alloy rim restoration by Rim Revivals Adelaide",
+        alt: "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
       },
     ],
   },
