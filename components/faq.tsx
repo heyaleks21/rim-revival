@@ -103,9 +103,8 @@ export default function FAQ() {
           <p className="text-muted-foreground">
             Don't see your question here?{" "}
             <button onClick={(e) => scrollToSection("quote", e)} className="text-[#0066B1] hover:underline font-medium">
-              Contact us
+              Send me a message.
             </button>{" "}
-            and I'll be happy to help.
           </p>
         </div>
       </div>

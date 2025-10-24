@@ -357,7 +357,7 @@ export default function QuoteForm() {
         // Show success message
         toast({
           title: "Quote Request Received",
-          description: "Your request has been submitted successfully. We'll contact you soon.",
+          description: "Your request has been submitted successfully. I'll contact you soon.",
         })
 
         setIsSuccess(true)
@@ -461,7 +461,7 @@ export default function QuoteForm() {
                 </div>
                 <h2 className="text-2xl font-bold mb-2">Request Sent Successfully!</h2>
                 <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-                  Thank you for your interest in our rim restoration services. We'll review your request and get back to
+                  Thank you for your interest in our rim restoration services. I'll review your request and get back to
                   you as soon as possible.
                 </p>
                 <Button onClick={resetForm} className="bg-[#0066B1] hover:bg-[#0066B1]/90">
@@ -752,7 +752,7 @@ export default function QuoteForm() {
                   )}
                 </Button>
                 <p className="text-center text-sm text-muted-foreground mt-4">
-                  We'll respond to your request within 24 hours.
+                  I'll respond to your request within 24 hours.
                 </p>
               </div>
             </form>
