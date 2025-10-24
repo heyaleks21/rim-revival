@@ -71,7 +71,7 @@ export default function CustomFinishes() {
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8641.JPEG",
       afterDesc: "Holden sport wheels transformed with mirror-finish gloss black by Rim Revivals Adelaide",
       title: "EV Pre-Sale Restoration",
-      description: "Factory Tesla rims with heavy rash restored to a factory appearance.",
+      description: "Tesla rims with heavy rash restored to a factory appearance.",
     },
   ]
 
