@@ -38,7 +38,7 @@ const serviceOptions = {
   "Budget Restoration": [
      "Minor scratch and rash repair",
         "Paint code matching (for solid gloss colors)",
-        "Durable gloss clear coat application",
+        "Gloss clear coat application",
         "Vehicle drop-off and collection",
         "Brake caliper painting",
   ],
@@ -668,7 +668,7 @@ export default function QuoteForm() {
                 <div className="space-y-3">
                   <Label className="text-base font-medium flex items-center gap-2">
                     <ImageIcon className="h-5 w-5 text-gray-600" />
-                    Rim Photos (Optional)
+                    Rim Photos
                   </Label>
                   <p className="text-sm text-muted-foreground">
                     Upload up to {MAX_IMAGES} photos of your rims to help me provide an accurate quote.
