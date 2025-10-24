@@ -3,17 +3,24 @@
 import type React from "react"
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
+import { usePathname } from "next/navigation"
 
 export default function Footer() {
-  // Smooth scroll function that doesn't update URL
-  const scrollToSection = (sectionId: string, event?: React.MouseEvent) => {
-    if (event) {
-      event.preventDefault()
+  const pathname = usePathname()
+  const isHomePage = pathname === "/"
+
+  // Smooth scroll function that works on home page
+  const scrollToSection = (sectionId: string, event: React.MouseEvent) => {
+    event.preventDefault()
+
+    // If we're not on the home page, navigate to home page with hash
+    if (!isHomePage) {
+      window.location.href = `/#${sectionId}`
+      return
     }
 
     const element = document.getElementById(sectionId)
     if (element) {
-      // Smooth scroll to the element
       element.scrollIntoView({ behavior: "smooth" })
     }
   }
@@ -21,6 +28,12 @@ export default function Footer() {
   // Scroll to top function
   const scrollToTop = (event: React.MouseEvent) => {
     event.preventDefault()
+
+    if (!isHomePage) {
+      window.location.href = "/"
+      return
+    }
+
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
@@ -30,11 +43,13 @@ export default function Footer() {
         {/* Top section with logo and contact */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div className="mb-4 md:mb-0">
-            <img
-              src="https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//rim-revivals-logo-whitef.svg"
-              alt="Rim Revivals Logo"
-              className="w-65 h-16 py-2 pr-2"
-            />
+            <a href="/">
+              <img
+                src="https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//rim-revivals-logo-whitef.svg"
+                alt="Rim Revivals Logo"
+                className="w-65 h-16 py-2 pr-2"
+              />
+            </a>
           </div>
 
           <div className="flex flex-wrap gap-4 md:gap-6">
@@ -73,14 +88,6 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  onClick={(e) => scrollToSection("services", e)}
-                  className="text-sm text-gray-300 hover:text-white transition-colors"
-                >
-                  Services
-                </button>
-              </li>
-              <li>
-                <button
                   onClick={(e) => scrollToSection("paint-types", e)}
                   className="text-sm text-gray-300 hover:text-white transition-colors"
                 >
@@ -95,12 +102,6 @@ export default function Footer() {
                   The Process
                 </button>
               </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-sm font-medium text-gray-400 mb-3">More</h4>
-            <ul className="space-y-2">
               <li>
                 <button
                   onClick={(e) => scrollToSection("gallery", e)}
@@ -109,6 +110,12 @@ export default function Footer() {
                   Gallery
                 </button>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-medium text-gray-400 mb-3">More</h4>
+            <ul className="space-y-2">
               <li>
                 <button
                   onClick={(e) => scrollToSection("testimonials", e)}
@@ -140,28 +147,24 @@ export default function Footer() {
             <h4 className="text-sm font-medium text-gray-400 mb-3">Services</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={(e) => scrollToSection("services", e)}
-                  className="text-sm text-gray-300 hover:text-white transition-colors"
-                >
-                  Budget Restoration
-                </button>
+                <a href="/budget-repairs" className="text-sm text-gray-300 hover:text-white transition-colors block">
+                  Budget Repairs
+                </a>
               </li>
               <li>
-                <button
-                  onClick={(e) => scrollToSection("services", e)}
-                  className="text-sm text-gray-300 hover:text-white transition-colors"
-                >
-                  Premium Restoration
-                </button>
+                <a href="/custom-finishes" className="text-sm text-gray-300 hover:text-white transition-colors block">
+                  Custom Finishes
+                </a>
               </li>
               <li>
-                <button
-                  onClick={(e) => scrollToSection("services", e)}
-                  className="text-sm text-gray-300 hover:text-white transition-colors"
-                >
-                  Custom Refinishing
-                </button>
+                <a href="/caliper-painting" className="text-sm text-gray-300 hover:text-white transition-colors block">
+                  Caliper Painting
+                </a>
+              </li>
+              <li>
+                <a href="/mobile-service" className="text-sm text-gray-300 hover:text-white transition-colors block">
+                  Mobile Service
+                </a>
               </li>
             </ul>
           </div>
