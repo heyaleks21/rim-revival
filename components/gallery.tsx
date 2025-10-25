@@ -24,23 +24,23 @@ export default function Gallery() {
   const galleryImages: GalleryImage[] = [
   {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jjbb%20%281%29.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/jeep1.webp",
       beforeDesc:
         "Standard Jeep Cherokee  rims with curb damage and scratches before restoration and caliper paint by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jjaa.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/jeep2.webp",
       afterDesc:
-        "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
+        "Jeep rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
       title: "Black Out & Caliper Paint",
       description: "Standard Jeep rims painted in semi-gloss black and calipers in Brembo red.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfab.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa1.webp",
       beforeDesc:
         "Factory Alfa Romeo rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfaa%20%281%29.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa2.webp",
       afterDesc:
         "Alfa Romeo rims and calipers transformed with an Anthracite grey and Alfa red finish.",
       title: "Premium Original Restoration",
@@ -48,12 +48,12 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/a1.JPEG",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/rr1.webp",
       beforeDesc:
-        "Audi 5-spoke rims with faded factory finish and edge wear before professional restoration in Adelaide",
+        "Land rover rims with faded factory finish and edge wear before professional restoration in Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/a2.webp",
-      afterDesc: "Audi rims restored with premium matte gray finish for a modern look by Rim Revivals Adelaide",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/rr2.webp",
+      afterDesc: "Land rover rims restored with a gloss black finish for a modern look by Rim Revivals Adelaide",
       title: "Rare Wheel Refresh",
       description: "Factory Land Rover rims with severe rash and multiple touch ups transformed.",
     },
@@ -61,10 +61,10 @@ export default function Gallery() {
     
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_9157.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx1.webp",
       beforeDesc: "Diamond-cut face wheels with oxidation and curb damage before professional restoration in Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_9112.JPEG",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx2.webp",
       afterDesc:
         "Boring grey WRX rims refinished in a high gloss black, with Porsche acid green calipers",
       title: "Premium Style Upgrade",
@@ -72,33 +72,33 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8810.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/mustang1.webp",
       beforeDesc:
         "Basic 5-spoke factory rims with worn silver finish before restoration in Adelaide, South Australia",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8830.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/mustang2.webp",
       afterDesc: "5-spoke wheels transformed with deep gloss black finish for a custom look by Rim Revivals Adelaide",
       title: "Classic Design Refresh",
       description: "Basic factory Mustang rims transformed with deep gloss black finish for a blacked-out look.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/1506842681f02d3fc0f4a6dbae65c773.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla1.webp",
       beforeDesc:
-        "Factory silver Holden sport wheels with multi-spoke design before professional restoration in Adelaide",
+        "Factory Tesla sport wheels with multi-spoke design before professional restoration in Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8641.JPEG",
-      afterDesc: "Holden sport wheels transformed with mirror-finish gloss black by Rim Revivals Adelaide",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla2.webp",
+      afterDesc: "Tesla sport wheels transformed with a matte black by Rim Revivals Adelaide",
       title: "EV Pre-Sale Restoration",
       description: "Factory Tesla rims with heavy rash restored to a factory appearance.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8553.JPEG",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m61.webp",
       beforeDesc:
         "Neglected BMW M6 rims and calipers restored in a bright metallic silver",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8523%20%281%29.jpg",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m62.webp",
       afterDesc:
         "BMW rims transformed with premium metallic gloss silver finish and clear coat protection by Rim Revivals Adelaide",
       title: "Factory Refresh",
@@ -106,26 +106,26 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/ab266007cf5a7a6172f6fadd64878988.JPEG",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/csl1.webp",
       beforeDesc:
         "Rattle canned BMW CSL rims stripped and restored.",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8864.JPEG",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/csl2.webp",
       afterDesc:
-        "Holden rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
-      title: "Silver to grey conversion",
+        "BMW CSL rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
+      title: "Much Needed Love",
       description: "Heavily rashed and rattle canned BMW CSL rims stripped and restored.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/12.JPEG",
-      beforeDesc: "Factory silver Holden multi-spoke wheels with dull finish and clear coat damage before restoration",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tt1.webp",
+      beforeDesc: "Factory silver Audi multi-spoke wheels with dull finish and clear coat damage before restoration",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_9161.JPEG",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tt2.webp",
       afterDesc:
         "Holden multi-spoke wheels refinished in high-gloss black.",
       title: "Sport Wheel Restoration",
-      description: "Multi-spoke rims with a poor finish and moderate rash refinished in high-gloss black.",
+      description: "Multi-spoke Audi rims with a poor finish and moderate rash refinished in high-gloss black.",
     },
   ]
 
