@@ -36,31 +36,31 @@ const MAX_TOTAL_SIZE = 8 * 1024 * 1024
 // Service options with sub-options
 const serviceOptions = {
   "Budget Restoration": [
-     "Minor scratch and rash repair",
-        "Paint code matching (for solid gloss colors)",
-        "Gloss clear coat application",
-        "Vehicle drop-off and collection",
-        "Brake caliper painting",
+        "Minor scratch and rash repair",
+        "Solid colour paint code matching",
+        "Gloss clear coat",
+        "Drop-off and collection (from $50)",
+        "Brake caliper painting (from $350)",
   ],
   "Premium Restoration": [
-   "Premium metallic paint options",
-    "Custom clear coats (satin or matte finishes)",
-        "Restoration for heavy chipping, fading, and oxidization",
+        "Premium metallic paint options",
+        "Custom clear coats (e.g., matte, satin, semi-gloss)",
+        "Restoration for heavy chipping, oxidization and poor finishes",
         "Deep scratch and extensive curb rash repair",
         "Inside barrels painted for a complete look",
-        "Vehicle drop-off and collection",
-        "Brake caliper painting",
+        "Drop-off and collection (from $50)",
+        "Brake caliper painting (from $350)",
   ],
   "Custom Refinishing": [
-    "Tire removal, fitting, and rebalance",
-    "Specialty finishes (e.g., shadow chrome, pearl, two-tone)",
-    "Polished metal finishes",
-    "Vehicle drop-off and collection",
-    "Brake caliper painting",
+        "Professional tire removal and re-fitting",
+        "Specialty finishes (e.g., shadow chrome, pearl, two-tone)",
+        "Polished metal finishes",
+        "Drop-off and collection (from $50)",
+        "Brake caliper painting (from $350)",
   ],
    "Brake Calipers Only": [
-    "Vehicle drop-off and collection",
-    "Brake caliper painting",
+        "Drop-off and collection (from $50)",
+        "Brake caliper painting (from $400)",
   ],
 }
 
