@@ -66,7 +66,7 @@ export default function Gallery() {
       after:
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx2.webp",
       afterDesc:
-        "Boring grey WRX rims refinished in a high gloss black, with Porsche acid green calipers",
+        "Boring grey WRX rims refinished in a high gloss black, with Porsche acid green calipers.",
       title: "Premium Style Upgrade",
       description: "Boring grey WRX rims refinished in a high gloss black, with Porsche acid green calipers.",
     },
@@ -83,17 +83,6 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla1.webp",
-      beforeDesc:
-        "Tesla sport wheels with multi-spoke design before professional restoration in Adelaide",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla2.webp",
-      afterDesc: "Tesla sport wheels transformed with a matte black by Rim Revivals Adelaide",
-      title: "EV Pre-Sale Restoration",
-      description: "Tesla rims with heavy rash restored to a factory appearance.",
-    },
-    {
-      before:
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m61.webp",
       beforeDesc:
         "Neglected BMW M6 rims and calipers restored in a bright metallic silver",
@@ -103,6 +92,17 @@ export default function Gallery() {
         "BMW rims transformed with premium metallic gloss silver finish and clear coat protection by Rim Revivals Adelaide",
       title: "Factory Refresh",
       description: "Neglected BMW M6 rims restored in a bright metallic silver with a caliper and hub refresh.",
+    },
+    {
+      before:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla1.webp",
+      beforeDesc:
+        "Tesla sport wheels with multi-spoke design before professional restoration in Adelaide",
+      after:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla2.webp",
+      afterDesc: "Tesla sport wheels transformed with a matte black by Rim Revivals Adelaide",
+      title: "EV Pre-Sale Restoration",
+      description: "Tesla rims with heavy rash restored to a factory appearance.",
     },
     {
       before:
