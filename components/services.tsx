@@ -79,7 +79,7 @@ export default function Services() {
                 </div>
               )}
               <CardHeader>
-                <CardTitle>{service.title}</CardTitle>
+                <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
                 <CardDescription>
                   <span className="text-2xl font-bold block mt-2">{service.price}</span>
                   <span className="text-sm block">{service.pricePer}</span>
@@ -110,7 +110,8 @@ export default function Services() {
 
         <div className="mt-6 text-center">
           <p className="text-xs text-muted-foreground italic max-w-2xl mx-auto">
-            *Final pricing may vary based on rim condition and size. Submit photos via the quote form for an accurate assessment.
+            *Final pricing may vary based on rim condition and size. Submit photos via the quote form for an accurate
+            assessment.
           </p>
         </div>
       </div>

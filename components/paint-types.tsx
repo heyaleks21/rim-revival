@@ -59,27 +59,27 @@ export default function PaintTypes() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Premium Paint Systems</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Only the highest quality automotive-grade paints and coatings are used to ensure your rims look fantastic and
-            stay protected for years to come.
+            Only the highest quality automotive-grade paints and coatings are used to ensure your rims look fantastic
+            and stay protected for years to come.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <Card className="border-0 shadow-lg overflow-hidden">
-            <CardContent className="p-0">
+            <CardContent className="p-0 overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="bg-[#0066B1]/10 p-8 flex items-center justify-center">
+                <div className="bg-[#0066B1]/10 p-8 flex items-center justify-center min-h-full">
                   <div className="max-w-sm text-center">
                     <h3 className="text-2xl font-bold mb-4">What Type of Paint Do You Use?</h3>
                     <p className="text-muted-foreground mb-6">
-                      Premium automotive-grade paint systems including epoxy and 2K primers, high performance
-                      base coat binders, and 2K polyurethane clear coats. All paint systems feature advanced UV inhibitors
+                      Premium automotive-grade paint systems including epoxy and 2K primers, high performance base coat
+                      binders, and 2K polyurethane clear coats. All paint systems feature advanced UV inhibitors
                       specifically rated for harsh Australian summers.
                     </p>
                     <p className="text-muted-foreground mb-6">
-                      Automotive-grade finishes are engineered to be weather and chemical resistant, protecting
-                      against road salt, brake dust, and cleaning products while maintaining their integrity and
-                      appearance for years to come.
+                      Automotive-grade finishes are engineered to be weather and chemical resistant, protecting against
+                      road salt, brake dust, and cleaning products while maintaining their integrity and appearance for
+                      years to come.
                     </p>
                     <div className="flex justify-center">
                       <Button
