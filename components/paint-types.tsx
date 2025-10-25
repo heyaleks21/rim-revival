@@ -65,10 +65,10 @@ export default function PaintTypes() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <CardContent className="p-0 overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="bg-[#0066B1]/10 p-8 flex items-center justify-center min-h-full">
+          <Card className="border-0 shadow-lg">
+            <CardContent className="p-0">
+              <div className="grid md:grid-cols-2">
+                <div className="bg-[#0066B1]/10 p-8 flex items-center justify-center">
                   <div className="max-w-sm text-center">
                     <h3 className="text-2xl font-bold mb-4">What Type of Paint Do You Use?</h3>
                     <p className="text-muted-foreground mb-6">
