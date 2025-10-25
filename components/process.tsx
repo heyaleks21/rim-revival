@@ -60,11 +60,11 @@ export default function Process() {
         <div className="grid md:grid-cols-5 gap-6">
           {steps.map((step, index) => (
             <Card key={index} className="text-center">
-              <CardHeader className="pb-2">
+              <CardHeader className="pb-3 pt-6">
                 <div className="mx-auto mb-4">{step.icon}</div>
-                <CardTitle className="text-lg">Step {index + 1}</CardTitle>
+                <CardTitle className="text-base md:text-lg mb-2">Step {index + 1}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="px-4 pb-6">
                 {step.linkTo ? (
                   <h3
                     className="font-medium mb-2 text-[#0066B1] hover:underline cursor-pointer transition-colors"
@@ -75,7 +75,7 @@ export default function Process() {
                 ) : (
                   <h3 className="font-medium mb-2">{step.title}</h3>
                 )}
-                <p className="text-sm text-muted-foreground">{step.description}</p>
+                <p className="text-sm md:text-base text-muted-foreground leading-snug">{step.description}</p>
               </CardContent>
             </Card>
           ))}

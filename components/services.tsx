@@ -79,11 +79,11 @@ export default function Services() {
                 </div>
               )}
               <CardHeader>
-                <CardTitle>{service.title}</CardTitle>
+                <CardTitle className="text-xl md:text-2xl">{service.title}</CardTitle>
                 <CardDescription>
-                  <span className="text-2xl font-bold block mt-2">{service.price}</span>
-                  <span className="text-sm block">{service.pricePer}</span>
-                  <span className="mt-2 block">{service.description}</span>
+                  <span className="text-3xl md:text-4xl font-bold block mt-2">{service.price}</span>
+                  <span className="text-sm md:text-base block">{service.pricePer}</span>
+                  <span className="mt-2 block text-base">{service.description}</span>
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -91,7 +91,7 @@ export default function Services() {
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <Check className="h-5 w-5 text-[#0066B1] shrink-0 mr-2" />
-                      <span>{feature}</span>
+                      <span className="text-sm md:text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
