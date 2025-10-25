@@ -48,7 +48,7 @@ export default function CustomFinishes() {
 
   const customGalleryImages = [
     {
-     before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfab.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfab.webp",
       beforeDesc: "Alfa Romeo calipers before refinishing",
       after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfaa%20%281%29.webp",
       afterDesc: "Alfa Romeo calipers in signature Alfa red",
@@ -63,12 +63,11 @@ export default function CustomFinishes() {
       title: "Metallic Silver Finish",
       description: "Premium metallic restoration with a caliper and hub refresh.",
     },
-    {  before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/1506842681f02d3fc0f4a6dbae65c773.webp",
+    {
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/1506842681f02d3fc0f4a6dbae65c773.webp",
       beforeDesc:
         "Factory silver Holden sport wheels with multi-spoke design before professional restoration in Adelaide",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8641.JPEG",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8641.JPEG",
       afterDesc: "Holden sport wheels transformed with mirror-finish gloss black by Rim Revivals Adelaide",
       title: "EV Pre-Sale Restoration",
       description: "Tesla rims with heavy rash restored to a factory appearance.",
@@ -78,7 +77,7 @@ export default function CustomFinishes() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative h-screen min-h-[600px] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 z-10" />
           <div className="relative w-full h-full">
@@ -86,6 +85,8 @@ export default function CustomFinishes() {
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
               alt="Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing."
               className="w-full h-full object-cover"
+              loading="eager"
+              style={{ contentVisibility: "auto" }}
             />
           </div>
         </div>
@@ -244,8 +245,8 @@ export default function CustomFinishes() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Consultation & Color Selection</h3>
                       <p className="text-muted-foreground">
-                        After discussing your vision, I'll show you samples and help you choose the perfect finish for your wheels
-                        and vehicle style.
+                        After discussing your vision, I'll show you samples and help you choose the perfect finish for
+                        your wheels and vehicle style.
                       </p>
                     </div>
                   </div>
@@ -261,8 +262,8 @@ export default function CustomFinishes() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Preparation</h3>
                       <p className="text-muted-foreground">
-                        Tires are removed (optional), wheels are stripped if needed, and all damage is repaired
-                        to create the perfect foundation.
+                        Tires are removed (optional), wheels are stripped if needed, and all damage is repaired to
+                        create the perfect foundation.
                       </p>
                     </div>
                   </div>
@@ -295,8 +296,8 @@ export default function CustomFinishes() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Finishing & Tire Fitting</h3>
                       <p className="text-muted-foreground">
-                        After curing, the wheels are inspected and tires are professionally mounted and
-                        balanced for perfect performance.
+                        After curing, the wheels are inspected and tires are professionally mounted and balanced for
+                        perfect performance.
                       </p>
                     </div>
                   </div>

@@ -30,8 +30,7 @@ export default function CaliperPainting() {
     {
       icon: <Shield className="h-8 w-8 text-[#0066B1]" />,
       title: "High-Temperature Paint",
-      description:
-        "2k high-temperature brake caliper paint that withstands extreme heat without fading or peeling.",
+      description: "2k high-temperature brake caliper paint that withstands extreme heat without fading or peeling.",
     },
     {
       icon: <Zap className="h-8 w-8 text-[#0066B1]" />,
@@ -88,14 +87,16 @@ export default function CaliperPainting() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative h-screen min-h-[600px] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 z-10" />
           <div className="relative w-full h-full">
             <img
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-              alt="Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance.e"
+              alt="Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance."
               className="w-full h-full object-cover"
+              loading="eager"
+              style={{ contentVisibility: "auto" }}
             />
           </div>
         </div>
@@ -105,8 +106,8 @@ export default function CaliperPainting() {
               Brake Caliper Painting in Adelaide
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-              Budget high-temperature caliper painting to complement your wheel restoration. Choose from OEM
-              colors or create a custom look.
+              Budget high-temperature caliper painting to complement your wheel restoration. Choose from OEM colors or
+              create a custom look.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
               <a
@@ -219,8 +220,8 @@ export default function CaliperPainting() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Careful Masking & Protection</h3>
                       <p className="text-muted-foreground">
-                        The entire vehicle plus brake components, bleeder valves, and mounting points are carefully masked to ensure paint only
-                        goes where it should.
+                        The entire vehicle plus brake components, bleeder valves, and mounting points are carefully
+                        masked to ensure paint only goes where it should.
                       </p>
                     </div>
                   </div>
@@ -253,8 +254,7 @@ export default function CaliperPainting() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Curing & Quality Check</h3>
                       <p className="text-muted-foreground">
-                        Paint is allowed to properly cure, then inspected for quality before wheel
-                        installation.
+                        Paint is allowed to properly cure, then inspected for quality before wheel installation.
                       </p>
                     </div>
                   </div>

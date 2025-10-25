@@ -24,8 +24,7 @@ export default function BudgetRepairs() {
     {
       icon: <DollarSign className="h-8 w-8 text-[#0066B1]" />,
       title: "Affordable Pricing",
-      description:
-        "Starting at $450 per set of 4 rims - over half the cost of traditional rim repair shops.",
+      description: "Starting at $450 per set of 4 rims - over half the cost of traditional rim repair shops.",
     },
     {
       icon: <Wrench className="h-8 w-8 text-[#0066B1]" />,
@@ -42,7 +41,8 @@ export default function BudgetRepairs() {
     {
       icon: <Check className="h-8 w-8 text-[#0066B1]" />,
       title: "Fast Turnaround",
-      description: "Quick 2-3 business day turnaround to get you back on the road with great-looking wheels. Rushed services available.",
+      description:
+        "Quick 2-3 business day turnaround to get you back on the road with great-looking wheels. Rushed services available.",
     },
   ]
 
@@ -82,7 +82,7 @@ export default function BudgetRepairs() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative h-screen min-h-[600px] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 z-10" />
           <div className="relative w-full h-full">
@@ -90,6 +90,8 @@ export default function BudgetRepairs() {
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
               alt="Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results."
               className="w-full h-full object-cover"
+              loading="eager"
+              style={{ contentVisibility: "auto" }}
             />
           </div>
         </div>
@@ -99,7 +101,8 @@ export default function BudgetRepairs() {
               Budget Rim Repairs in Adelaide
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-              Professional wheel restoration that won't break the bank. Perfect for minor damage and colour changes starting at $450 per set of 4 rims.
+              Professional wheel restoration that won't break the bank. Perfect for minor damage and colour changes
+              starting at $450 per set of 4 rims.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
               <a
@@ -125,8 +128,8 @@ export default function BudgetRepairs() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">What's Included in Budget Repairs</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              My budget package is perfect for minor damage and gives you professional results without the premium
-              price tag.
+              My budget package is perfect for minor damage and gives you professional results without the premium price
+              tag.
             </p>
           </div>
 
@@ -166,7 +169,7 @@ export default function BudgetRepairs() {
                   <Check className="h-5 w-5 text-[#0066B1] shrink-0 mr-3 mt-0.5" />
                   <span>2-3 business day turnaround</span>
                 </li>
-                 <li className="flex items-start">
+                <li className="flex items-start">
                   <Check className="h-5 w-5 text-[#0066B1] shrink-0 mr-3 mt-0.5" />
                   <span>Rushed overnight/same day pickup services</span>
                 </li>
@@ -174,7 +177,6 @@ export default function BudgetRepairs() {
                   <Check className="h-5 w-5 text-[#0066B1] shrink-0 mr-3 mt-0.5" />
                   <span>Pick-up and drop-off services available</span>
                 </li>
-                
               </ul>
             </CardContent>
           </Card>
@@ -253,8 +255,7 @@ export default function BudgetRepairs() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Budget Repair Results</h2>
             <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              See the quality transformations achieved with my budget repair package. Slide to compare before and
-              after.
+              See the quality transformations achieved with my budget repair package. Slide to compare before and after.
             </p>
           </div>
           <BeforeAfterGallery images={budgetGalleryImages} />

@@ -118,14 +118,16 @@ export default function MobileService() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative h-screen min-h-[600px] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 z-10" />
           <div className="relative w-full h-full">
             <img
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-              alt="Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience.e"
+              alt="Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience."
               className="w-full h-full object-cover"
+              loading="eager"
+              style={{ contentVisibility: "auto" }}
             />
           </div>
         </div>
@@ -195,8 +197,8 @@ export default function MobileService() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Submit Your Quote Request</h3>
                       <p className="text-muted-foreground">
-                        Fill out my quote form with photos and details about your wheels. I'll provide a detailed
-                        quote and schedule a convenient pickup time.
+                        Fill out my quote form with photos and details about your wheels. I'll provide a detailed quote
+                        and schedule a convenient pickup time.
                       </p>
                     </div>
                   </div>
@@ -229,8 +231,8 @@ export default function MobileService() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Professional Restoration</h3>
                       <p className="text-muted-foreground">
-                        Your wheels are transported to my home-based workshop where they undergo the same professional restoration
-                        process as any other job. I'll keep you updated on progress.
+                        Your wheels are transported to my home-based workshop where they undergo the same professional
+                        restoration process as any other job. I'll keep you updated on progress.
                       </p>
                     </div>
                   </div>
