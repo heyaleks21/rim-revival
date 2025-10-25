@@ -81,8 +81,8 @@ export default function Services() {
               key={index}
               className={`relative flex flex-col transition-all duration-300 ${
                 service.featured
-                  ? "border-[#FF0000] border-2 shadow-xl scale-105 bg-white"
-                  : "border-gray-200 hover:shadow-lg hover:scale-105 bg-white"
+                  ? "border-[#FF0000] border-2 shadow-xl md:scale-105 bg-white"
+                  : "border-gray-200 md:hover:shadow-lg md:hover:scale-105 bg-white"
               }`}
             >
               {service.badge && (

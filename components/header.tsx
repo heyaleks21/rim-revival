@@ -91,9 +91,16 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-6">
           <div className="relative group">
             <button
-              className={`text-sm font-medium transition-colors flex items-center gap-1 ${
+              className={`text-base font-medium transition-colors flex items-center gap-1 ${
                 scrolled ? "text-gray-700 hover:text-[#0066B1]" : "text-white/90 hover:text-white"
               }`}
+              onClick={(e) => {
+                if (isHomePage) {
+                  scrollToSection("services", e)
+                } else {
+                  window.location.href = "/#services"
+                }
+              }}
               onMouseEnter={() => setIsServicesOpen(true)}
             >
               Services
@@ -106,25 +113,25 @@ export default function Header() {
               >
                 <a
                   href="/budget-repairs"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#0066B1]"
+                  className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100 hover:text-[#0066B1]"
                 >
                   Budget Repairs
                 </a>
                 <a
                   href="/custom-finishes"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#0066B1]"
+                  className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100 hover:text-[#0066B1]"
                 >
                   Custom Finishes
                 </a>
                 <a
                   href="/caliper-painting"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#0066B1]"
+                  className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100 hover:text-[#0066B1]"
                 >
                   Caliper Painting
                 </a>
                 <a
                   href="/mobile-service"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#0066B1]"
+                  className="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100 hover:text-[#0066B1]"
                 >
                   Mobile Service
                 </a>
@@ -140,7 +147,7 @@ export default function Header() {
           ].map((item) => (
             <button
               key={item.id}
-              className={`text-sm font-medium transition-colors relative ${
+              className={`text-base font-medium transition-colors relative ${
                 scrolled ? "text-gray-700 hover:text-[#0066B1]" : "text-white/90 hover:text-white"
               } ${activeSection === item.id && isHomePage ? "after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#0066B1]" : ""}`}
               onClick={(e) => scrollToSection(item.id, e)}
@@ -167,83 +174,91 @@ export default function Header() {
         <Button
           variant="ghost"
           size="icon"
-          className={`md:hidden ${scrolled ? "text-gray-700" : "text-white"}`}
+          className={`md:hidden h-14 w-14 ${scrolled ? "text-gray-700" : "text-white"}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {isMenuOpen ? <X className="h-9 w-9" /> : <Menu className="h-9 w-9" />}
           <span className="sr-only">Toggle menu</span>
         </Button>
       </div>
 
       {isMenuOpen && (
-        <div className="container md:hidden py-4 pb-6 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-md mt-2 rounded-b-lg">
-          <nav className="flex flex-col space-y-4">
-            <div className="space-y-2">
-              <div className="text-sm font-semibold text-gray-500 px-2">Services</div>
-              <a
-                href="/budget-repairs"
-                className="text-sm font-medium px-4 py-2 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Budget Repairs
-              </a>
-              <a
-                href="/custom-finishes"
-                className="text-sm font-medium px-4 py-2 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Custom Finishes
-              </a>
-              <a
-                href="/caliper-painting"
-                className="text-sm font-medium px-4 py-2 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Caliper Painting
-              </a>
-              <a
-                href="/mobile-service"
-                className="text-sm font-medium px-4 py-2 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Mobile Service
-              </a>
+        <div className="container md:hidden py-6 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-md mt-2 rounded-b-lg">
+          <nav className="flex flex-col space-y-2">
+            <div className="mb-4">
+              <div className="text-xs font-bold text-gray-500 uppercase tracking-wider px-4 mb-3">Our Services</div>
+              <div className="space-y-1">
+                <a
+                  href="/budget-repairs"
+                  className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Budget Repairs
+                </a>
+                <a
+                  href="/custom-finishes"
+                  className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Custom Finishes
+                </a>
+                <a
+                  href="/caliper-painting"
+                  className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Caliper Painting
+                </a>
+                <a
+                  href="/mobile-service"
+                  className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Mobile Service
+                </a>
+              </div>
             </div>
-            {[
-              { id: "paint-types", label: "Paint Systems" },
-              { id: "process", label: "The Process" },
-              { id: "gallery", label: "Gallery" },
-              { id: "testimonials", label: "Testimonials" },
-              { id: "faq", label: "FAQ" },
-            ].map((item) => (
-              <button
-                key={item.id}
-                className={`text-sm font-medium px-2 py-2 rounded-md transition-colors text-left ${
-                  activeSection === item.id && isHomePage
-                    ? "bg-[#0066B1]/10 text-[#0066B1]"
-                    : "text-gray-700 hover:text-[#0066B1] hover:bg-gray-100"
-                }`}
+
+            <div className="border-t border-gray-200 pt-4">
+              {[
+                { id: "paint-types", label: "Paint Systems" },
+                { id: "process", label: "The Process" },
+                { id: "gallery", label: "Gallery" },
+                { id: "testimonials", label: "Testimonials" },
+                { id: "faq", label: "FAQ" },
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  className={`text-base font-medium px-4 py-3 rounded-md transition-colors text-left w-full ${
+                    activeSection === item.id && isHomePage
+                      ? "bg-[#0066B1]/10 text-[#0066B1]"
+                      : "text-gray-700 hover:text-[#0066B1] hover:bg-gray-100"
+                  }`}
+                  onClick={(e) => {
+                    scrollToSection(item.id, e)
+                    setIsMenuOpen(false)
+                  }}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+
+            <div className="pt-4">
+              <Button
                 onClick={(e) => {
-                  scrollToSection(item.id, e)
+                  if (isHomePage) {
+                    scrollToSection("quote", e)
+                  } else {
+                    window.location.href = "/#quote"
+                  }
                   setIsMenuOpen(false)
                 }}
+                className="w-full bg-[#FF0000] hover:bg-[#FF0000]/90 py-3 text-base font-semibold"
               >
-                {item.label}
-              </button>
-            ))}
-            <Button
-              onClick={(e) => {
-                if (isHomePage) {
-                  scrollToSection("quote", e)
-                } else {
-                  window.location.href = "/#quote"
-                }
-                setIsMenuOpen(false)
-              }}
-              className="w-full mt-2 bg-[#FF0000] hover:bg-[#FF0000]/90"
-            >
-              Get a Quote
-            </Button>
+                Get a Quote
+              </Button>
+            </div>
           </nav>
         </div>
       )}

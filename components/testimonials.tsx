@@ -43,8 +43,7 @@ export default function Testimonials() {
     {
       name: "Steve",
       vehicle: "Ford FG XR8",
-      comment:
-        "Great Service! Alex Smashed out my Dark Argents in record time! He’s the Satin Black Guru!!!",
+      comment: "Great Service! Alex Smashed out my Dark Argents in record time! He’s the Satin Black Guru!!!",
       rating: 5,
       date: "2 months ago",
       source: "Google",
@@ -52,8 +51,7 @@ export default function Testimonials() {
     {
       name: "Amanjot singh",
       vehicle: "Mercedes C200",
-      comment:
-        "Amazing service and price, thanks Aleks!",
+      comment: "Amazing service and price, thanks Aleks!",
       rating: 5,
       date: "1 week ago",
       source: "Google",
@@ -67,32 +65,29 @@ export default function Testimonials() {
       date: "2 months ago",
       source: "Google",
     },
-    
-     {
+
+    {
       name: "Bruno",
       vehicle: "Alfa Romeo 156",
-      comment:
-        "AAAA++++ highly recommend perfect job and really fast makes my car look amazing",
+      comment: "AAAA++++ highly recommend perfect job and really fast makes my car look amazing",
       rating: 5,
       date: "2 months ago",
       source: "Google",
-    }
+    },
   ]
 
   return (
     <section id="testimonials" className="py-20 bg-gray-100">
       <div className="container">
         <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <h2 className="text-3xl md:text-4xl font-bold">Customer Reviews</h2>
-            <div className="flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-[#FBBC05] fill-[#FBBC05]" />
-                ))}
-              </div>
-              <span className="font-semibold text-gray-900">5.0</span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Customer Reviews</h2>
+          <div className="flex items-center justify-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm inline-flex mb-6">
+            <div className="flex">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-5 w-5 text-[#FBBC05] fill-[#FBBC05]" />
+              ))}
             </div>
+            <span className="font-semibold text-gray-900">5.0</span>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
             Read what customers have to say about their rim restoration experience with Rim Revivals.
@@ -176,8 +171,6 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-
-      
     </section>
   )
 }

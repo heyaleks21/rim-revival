@@ -88,10 +88,10 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  onClick={(e) => scrollToSection("paint-types", e)}
+                  onClick={(e) => scrollToSection("services", e)}
                   className="text-sm text-gray-300 hover:text-white transition-colors"
                 >
-                  Paint Systems
+                  Services
                 </button>
               </li>
               <li>
@@ -116,6 +116,14 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-medium text-gray-400 mb-3">More</h4>
             <ul className="space-y-2">
+              <li>
+                <button
+                  onClick={(e) => scrollToSection("paint-types", e)}
+                  className="text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  Paint Systems
+                </button>
+              </li>
               <li>
                 <button
                   onClick={(e) => scrollToSection("testimonials", e)}
