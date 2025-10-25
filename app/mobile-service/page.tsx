@@ -59,30 +59,30 @@ export default function MobileService() {
   const mobileGalleryImages = [
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20before.JPEG-XwD6OUSGRHNXggZFYrlsrLbQC0Kmfs.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ani1.webp",
       beforeDesc: "Wheels collected via mobile service before restoration",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20after.JPEG-WoJ7idkpqd7fYO3NhOCw8tUGgISjfZ.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ani2.webp",
       afterDesc: "Restored wheels delivered back via mobile service",
       title: "Mobile Service Transformation",
       description: "Picked up, restored, and delivered.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/6%20before.JPEG-1Vjq7D4MtC6w8gWesS0Q7DC7z0Egea.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv1.webp",
       beforeDesc: "Sport wheels collected for mobile restoration service",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/6%20after.JPEG-31mZy7koWNFgS9RoJ7CF3gsbuI7nvp.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv2.webp",
       afterDesc: "Sport wheels restored and returned via mobile service",
       title: "Convenient Mobile Restoration",
       description: "Professional results with convenient service.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/2%20before.JPEG-492VbNwysP1u9i6KccPHn6sZwM2oVk.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf1.webp",
       beforeDesc: "Multi-spoke wheels via mobile pickup service",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/2%20after.JPEG-yFrSUCPVS5ejMEoNEx2e2jarpEWWLN.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf2.webp",
       afterDesc: "Restored wheels delivered to customer's location",
       title: "Mobile Service Excellence",
       description: "Quality restoration at your convenience.",

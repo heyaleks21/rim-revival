@@ -58,30 +58,30 @@ export default function BudgetRepairs() {
   const budgetGalleryImages = [
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20before.JPEG-XwD6OUSGRHNXggZFYrlsrLbQC0Kmfs.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv1.webp",
       beforeDesc: "Factory silver Holden rims with light curb damage before budget restoration",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/1%20after.JPEG-WoJ7idkpqd7fYO3NhOCw8tUGgISjfZ.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv2.webp",
       afterDesc: "Holden rims transformed with budget-friendly gloss black finish",
       title: "Silver to Black Budget Conversion",
       description: "Factory rims restored with my affordable budget package.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/2%20before.JPEG-492VbNwysP1u9i6KccPHn6sZwM2oVk.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf1.webp",
       beforeDesc: "Multi-spoke wheels with dull finish before budget repair",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/2%20after.JPEG-yFrSUCPVS5ejMEoNEx2e2jarpEWWLN.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf2.webp",
       afterDesc: "Multi-spoke wheels refinished in high-gloss black on a budget",
       title: "Budget Sport Wheel Restoration",
       description: "Affordable transformation with professional results.",
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/5%20before.JPEG-Mz4C4lG1Ckq6q5kyxpK8dzr3XbI2ik.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ss1.webp",
       beforeDesc: "Basic 5-spoke factory wheels before budget restoration",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/before/5%20after.JPEG-qvvt77i4MkNItcSOoxRmD0EaPaUafg.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ss2.webp",
       afterDesc: "5-spoke wheels with deep gloss black finish - budget package",
       title: "Budget Classic Wheel Refresh",
       description: "Simple yet effective budget restoration.",
