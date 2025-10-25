@@ -302,7 +302,7 @@ export default function CaliperPainting() {
       <section className="py-20 bg-gray-100">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Caliper Painting Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Caliper Painting Process</h2>
             <div className="space-y-6">
               <Card>
                 <CardContent className="pt-6">
