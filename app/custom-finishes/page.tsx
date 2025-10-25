@@ -82,8 +82,8 @@ export default function CustomFinishes() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-            alt="Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing."
+            src="/images/hero-bmw-wheel.webp"
+            alt="Custom rim finishes in Adelaide showcasing BMW wheels with specialty refinishing, shadow chrome, pearl, and metallic options"
             fill
             priority
             quality={90}

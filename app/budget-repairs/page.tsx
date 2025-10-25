@@ -87,8 +87,8 @@ export default function BudgetRepairs() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-            alt="Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results."
+            src="/images/hero-bmw-wheel.webp"
+            alt="Professional budget rim repairs in Adelaide showcasing restored BMW wheels with premium alloy refinishing and caliper painting"
             fill
             priority
             quality={90}

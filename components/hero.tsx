@@ -24,8 +24,8 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-          alt="Luxury BMW wheel with premium alloy rim restoration by Rim Revivals Adelaide"
+          src="/images/hero-bmw-wheel.webp"
+          alt="Professional BMW wheel and brake caliper restoration showcasing premium alloy rim refinishing and caliper painting services in Adelaide"
           fill
           priority
           quality={90}
