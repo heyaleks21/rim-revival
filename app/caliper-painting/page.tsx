@@ -405,11 +405,13 @@ export default function CaliperPainting() {
               </CardContent>
             </Card>
 
-            <Card className="border-[#0066B1] border-2">
-              <CardContent className="pt-6">
-                <div className="bg-[#0066B1] text-white text-xs font-bold px-2 py-1 rounded inline-block mb-3">
+            <Card className="border-[#0066B1] border-2 relative">
+              <div className="absolute -top-3 -right-3 z-10">
+                <div className="bg-[#0066B1] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
                   POPULAR
                 </div>
+              </div>
+              <CardContent className="pt-6">
                 <h3 className="font-semibold text-xl mb-3">With Wheel Restoration</h3>
                 <p className="text-muted-foreground mb-4">
                   Add caliper painting to any wheel restoration package for a complete, cohesive look.
@@ -425,7 +427,11 @@ export default function CaliperPainting() {
                 <p className="text-muted-foreground mb-4">
                   Complex caliper work, hub painting, or special requirements? Let's discuss a custom quote.
                 </p>
-                <div className="text-2xl font-bold text-[#0066B1] mb-2">Custom Quote</div>
+                <a href="#quote" className="block">
+                  <div className="text-2xl font-bold text-[#0066B1] mb-2 hover:underline cursor-pointer">
+                    Custom Quote
+                  </div>
+                </a>
                 <div className="text-sm text-muted-foreground">based on requirements</div>
               </CardContent>
             </Card>
