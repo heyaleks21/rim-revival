@@ -79,7 +79,7 @@ export default function Services() {
                 </div>
               )}
               <CardHeader>
-                <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
+                <CardTitle>{service.title}</CardTitle>
                 <CardDescription>
                   <span className="text-2xl font-bold block mt-2">{service.price}</span>
                   <span className="text-sm block">{service.pricePer}</span>
