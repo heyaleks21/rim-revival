@@ -503,7 +503,7 @@ export default function QuoteForm() {
                       value={formData.name}
                       onChange={handleChange}
                       className="pl-10 focus-visible:ring-[#0066B1]"
-                      placeholder="Full Name"
+                      placeholder="Name"
                       required
                     />
                   </div>
