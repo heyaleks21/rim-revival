@@ -70,7 +70,7 @@ export default function CustomFinishes() {
         "Factory silver Holden sport wheels with multi-spoke design before professional restoration in Adelaide",
       after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8641.JPEG",
       afterDesc: "Holden sport wheels transformed with mirror-finish gloss black by Rim Revivals Adelaide",
-      title: "EV Pre-Sale Restoration",
+      title: "Matte Black Restoration",
       description: "Tesla rims with heavy rash restored to a factory appearance.",
     },
   ]
