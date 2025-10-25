@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BeforeAfterGallery from "@/components/before-after-gallery"
@@ -87,16 +88,20 @@ export default function CaliperPainting() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] overflow-hidden">
-        <div className="absolute inset-0 z-0">
+      <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
+        <div className="absolute inset-0 z-0 bg-black">
           <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 z-10" />
           <div className="relative w-full h-full">
-            <img
+            <Image
               src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
               alt="Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance."
-              className="w-full h-full object-cover"
-              loading="eager"
-              style={{ contentVisibility: "auto" }}
+              fill
+              priority
+              sizes="100vw"
+              quality={85}
+              className="object-cover"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
             />
           </div>
         </div>
