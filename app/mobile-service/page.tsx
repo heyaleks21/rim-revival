@@ -26,7 +26,7 @@ export default function MobileService() {
       icon: <Truck className="h-8 w-8 text-[#0066B1]" />,
       title: "Pickup & Delivery",
       description:
-        "I collect your wheels from your location and return them when the work is complete - all within the Adelaide metro area.",
+        "Your wheels are collected from your location and returned when the work is complete - all within the Adelaide metro area.",
     },
     {
       icon: <MapPin className="h-8 w-8 text-[#0066B1]" />,
@@ -220,10 +220,10 @@ export default function MobileService() {
                       2
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">I Collect Your Wheels</h3>
+                      <h3 className="font-semibold text-lg mb-2">Your Wheels Are Collected</h3>
                       <p className="text-muted-foreground">
                         At the scheduled time, I'll arrive at your location to collect your wheels. You can leave them
-                        on the vehicle, or have them ready for us.
+                        on the vehicle, or have them ready for pickup.
                       </p>
                     </div>
                   </div>
@@ -256,7 +256,7 @@ export default function MobileService() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Delivery Back to You</h3>
                       <p className="text-muted-foreground">
-                        Once complete, i'll deliver your beautifully restored wheels back to your location at a time
+                        Once complete, I'll deliver your beautifully restored wheels back to your location at a time
                         that suits your schedule. Simple as that!
                       </p>
                     </div>
@@ -317,7 +317,7 @@ export default function MobileService() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-3 border-b">
                     <span className="font-medium">Budget Restoration Package</span>
-                    <span className="text-xl font-bold text-[#0066B1]">From $450</span>
+                    <span className="text-xl font-bold text-[#0066B1]">$450</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b">
                     <span className="font-medium">Premium Restoration Package</span>
@@ -329,11 +329,11 @@ export default function MobileService() {
                   </div>
                   <div className="flex justify-between items-center py-3">
                     <span className="font-medium">Metro Pickup & Delivery</span>
-                    <span className="text-xl font-bold text-[#0066B1]">From $50</span>
+                    <span className="text-xl font-bold text-[#0066B1]">$50</span>
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground text-center mt-6">
-                  Pickup and delivery fee varies based on location. Get an exact quote when you submit your request.
+                  Restoration, pickup and delivery fees vary based on location. Get an exact quote when you submit your request.
                 </p>
               </CardContent>
             </Card>
