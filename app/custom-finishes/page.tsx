@@ -78,23 +78,26 @@ export default function CustomFinishes() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
-        <div className="absolute inset-0 z-0 bg-black">
-          <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 z-10" />
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
-              alt="Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing."
-              fill
-              priority
-              sizes="100vw"
-              quality={85}
-              className="object-cover"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-            />
-          </div>
+      <section className="relative h-screen min-h-[600px] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
+            alt="Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing."
+            fill
+            priority
+            quality={90}
+            sizes="100vw"
+            className="object-cover"
+            style={{
+              objectPosition: "center",
+            }}
+          />
+          {/* Overlay gradient */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
         </div>
+
+        {/* Content */}
         <div className="container relative z-10 h-full flex items-center">
           <div className="max-w-2xl text-white text-center sm:text-left mx-auto sm:mx-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
