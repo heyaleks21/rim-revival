@@ -57,27 +57,27 @@ export default function CustomFinishes() {
 
   const customGalleryImages = [
     {
-      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfab.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa1.webp",
       beforeDesc: "Alfa Romeo calipers before refinishing",
-      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfaa%20%281%29.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa2.webp",
       afterDesc: "Alfa Romeo calipers in signature Alfa red",
       title: "Premium Ferarri Colour",
       description: "Alfa Romeo rims restored in a custom Ferarri colour.",
     },
     {
-      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8553.JPEG",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m61.webp",
       beforeDesc: "BMW M6 rims before custom metallic silver restoration",
-      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/IMG_8523%20%281%29.jpg",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m62.webp",
       afterDesc: "BMW M6 with custom metallic silver finish and caliper refresh",
       title: "Metallic Silver Finish",
       description: "Premium metallic restoration with a caliper and hub refresh.",
     },
     {
-      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/1506842681f02d3fc0f4a6dbae65c773.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla1.webp",
       beforeDesc:
-        "Factory silver Holden sport wheels with multi-spoke design before professional restoration in Adelaide",
-      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_8641.JPEG",
-      afterDesc: "Holden sport wheels transformed with mirror-finish gloss black by Rim Revivals Adelaide",
+        "Factory  Tesla sport wheels with heavy rash before professional repair in Adelaide",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla2.webp",
+      afterDesc: "Tesla sport wheels transformed with matte black finish by Rim Revivals Adelaide",
       title: "Matte Black Restoration",
       description: "Tesla rims with heavy rash restored to a factory appearance.",
     },

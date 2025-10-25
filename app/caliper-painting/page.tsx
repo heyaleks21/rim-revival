@@ -57,28 +57,28 @@ export default function CaliperPainting() {
 
   const caliperGalleryImages = [
     {
-      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jjbb%20%281%29.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/jeep1.webp",
       beforeDesc: "Jeep Cherokee calipers before painting",
-      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/jjaa.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/jeep2.webp",
       afterDesc: "Jeep calipers painted in Brembo red with black rims",
       title: "Brembo Red Caliper Paint",
       description: "Classic Brembo red on Jeep Cherokee.",
     },
     {
-      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfab.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa1.webp",
       beforeDesc: "Alfa Romeo calipers before refinishing",
-      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/alfaa%20%281%29.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa2.webp",
       afterDesc: "Alfa Romeo calipers in signature Alfa red",
       title: "Alfa Romeo Red Calipers",
       description: "OEM Alfa red caliper restoration.",
     },
     {
-      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_9157.webp",
-      beforeDesc: "BMW M6 calipers and hub before refresh",
-      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/IMG_9112.JPEG",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx1.webp",
+      beforeDesc: "Subaru WRX calipers before refresh",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx2.webp",
       afterDesc: "WRX calipers restored in Porsche Acid Green",
       title: "WRX Caliper Refresh",
-      description: "Complete caliper and hub restoration.",
+      description: "Complete caliper restoration.",
     },
   ]
 
