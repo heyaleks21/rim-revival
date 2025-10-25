@@ -20,9 +20,9 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden">
+    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden bg-black">
       {/* Background Image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-black">
         <Image
           src="/images/hero-bmw-wheel.webp"
           alt="Professional rim restoration services in Adelaide showcasing BMW wheels with premium alloy wheel refinishing and brake caliper painting"

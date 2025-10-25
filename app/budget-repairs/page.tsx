@@ -91,9 +91,9 @@ export default function BudgetRepairs() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] overflow-hidden">
+      <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
         {/* Background Image */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-black">
           <Image
             src="/images/hero-bmw-wheel.webp"
             alt="Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results."
