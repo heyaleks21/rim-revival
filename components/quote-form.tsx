@@ -671,7 +671,7 @@ export default function QuoteForm() {
                     Rim Photos
                   </Label>
                   <p className="text-sm text-muted-foreground">
-                    Upload up to {MAX_IMAGES} photos of your rims to help me provide an accurate quote.
+                    Please upload a few clear photos of your rims to help me provide an accurate quote.
                   </p>
 
                   {/* Image Previews */}
