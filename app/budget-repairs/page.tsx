@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BeforeAfterGallery from "@/components/before-after-gallery"
@@ -91,25 +90,17 @@ export default function BudgetRepairs() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero-bmw-wheel.webp"
-            alt="Professional budget rim repairs in Adelaide showcasing restored BMW wheels with premium alloy refinishing and caliper painting"
-            fill
-            priority
-            quality={90}
-            sizes="100vw"
-            className="object-cover"
-            style={{
-              objectPosition: "center",
-            }}
-            placeholder="empty"
-          />
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
-        </div>
+      <section
+        className="relative h-screen min-h-[600px]"
+        style={{
+          backgroundImage: "url('/images/hero-bmw-wheel.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
 
         {/* Content */}
         <div className="container relative z-10 h-full flex items-center">

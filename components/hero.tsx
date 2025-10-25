@@ -3,7 +3,6 @@
 import type React from "react"
 
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
 
 export default function Hero() {
   // Smooth scroll function that doesn't update URL
@@ -20,25 +19,18 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/hero-bmw-wheel.webp"
-          alt="Professional BMW wheel and brake caliper restoration showcasing premium alloy rim refinishing and caliper painting services in Adelaide"
-          fill
-          priority
-          quality={90}
-          sizes="100vw"
-          className="object-cover"
-          style={{
-            objectPosition: "center",
-          }}
-          placeholder="empty"
-        />
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
-      </div>
+    <section
+      id="home"
+      className="relative h-screen min-h-[600px]"
+      style={{
+        backgroundImage: "url('/images/hero-bmw-wheel.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Overlay gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
 
       {/* Content */}
       <div className="container relative z-10 h-full flex items-center">

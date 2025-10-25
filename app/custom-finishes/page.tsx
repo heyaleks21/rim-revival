@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BeforeAfterGallery from "@/components/before-after-gallery"
@@ -86,25 +85,17 @@ export default function CustomFinishes() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero-bmw-wheel.webp"
-            alt="Custom rim finishes in Adelaide showcasing BMW wheels with specialty refinishing, shadow chrome, pearl, and metallic options"
-            fill
-            priority
-            quality={90}
-            sizes="100vw"
-            className="object-cover"
-            style={{
-              objectPosition: "center",
-            }}
-            placeholder="empty"
-          />
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
-        </div>
+      <section
+        className="relative h-screen min-h-[600px]"
+        style={{
+          backgroundImage: "url('/images/hero-bmw-wheel.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
 
         {/* Content */}
         <div className="container relative z-10 h-full flex items-center">
