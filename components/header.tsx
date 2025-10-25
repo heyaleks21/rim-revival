@@ -171,55 +171,70 @@ export default function Header() {
           </Button>
         </nav>
 
-        <Button
-          variant="ghost"
-          size="icon"
-          className={`md:hidden h-14 w-14 ${scrolled ? "text-gray-700" : "text-white"}`}
+        <button
+          className={`md:hidden h-14 w-14 flex items-center justify-center ${scrolled ? "text-gray-700 hover:text-[#0066B1]" : "text-white hover:text-gray-300"} transition-colors`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
         >
-          {isMenuOpen ? <X className="h-9 w-9" /> : <Menu className="h-9 w-9" />}
-          <span className="sr-only">Toggle menu</span>
-        </Button>
+          {isMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
+        </button>
       </div>
 
       {isMenuOpen && (
         <div className="container md:hidden py-6 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-md mt-2 rounded-b-lg">
           <nav className="flex flex-col space-y-2">
-            <div className="mb-4">
-              <div className="text-xs font-bold text-gray-500 uppercase tracking-wider px-4 mb-3">Our Services</div>
-              <div className="space-y-1">
-                <a
-                  href="/budget-repairs"
-                  className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Budget Repairs
-                </a>
-                <a
-                  href="/custom-finishes"
-                  className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Custom Finishes
-                </a>
-                <a
-                  href="/caliper-painting"
-                  className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Caliper Painting
-                </a>
-                <a
-                  href="/mobile-service"
-                  className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Mobile Service
-                </a>
-              </div>
+            {/* Service sub-pages */}
+            <div className="space-y-1 mb-4">
+              <a
+                href="/budget-repairs"
+                className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Budget Repairs
+              </a>
+              <a
+                href="/custom-finishes"
+                className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Custom Finishes
+              </a>
+              <a
+                href="/caliper-painting"
+                className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Caliper Painting
+              </a>
+              <a
+                href="/mobile-service"
+                className="text-base font-medium px-4 py-3 rounded-md text-gray-700 hover:text-[#0066B1] hover:bg-gray-100 block transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Mobile Service
+              </a>
             </div>
 
             <div className="border-t border-gray-200 pt-4">
+              {/* Main Services Section Link */}
+              <button
+                className={`text-base font-medium px-4 py-3 rounded-md transition-colors text-left w-full ${
+                  activeSection === "services" && isHomePage
+                    ? "bg-[#0066B1]/10 text-[#0066B1]"
+                    : "text-gray-700 hover:text-[#0066B1] hover:bg-gray-100"
+                }`}
+                onClick={(e) => {
+                  if (isHomePage) {
+                    scrollToSection("services", e)
+                  } else {
+                    window.location.href = "/#services"
+                  }
+                  setIsMenuOpen(false)
+                }}
+              >
+                Services
+              </button>
+
               {[
                 { id: "paint-types", label: "Paint Systems" },
                 { id: "process", label: "The Process" },
