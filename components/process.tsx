@@ -1,47 +1,42 @@
 "use client"
-
-import type React from "react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ClipboardCheck, Camera, Wrench, Truck, ThumbsUp } from "lucide-react"
+import { Camera, ClipboardCheck, Truck, Wrench, ThumbsUp } from "lucide-react"
 
 export default function Process() {
-  // Smooth scroll function that doesn't update URL
-  const scrollToSection = (sectionId: string, event?: React.MouseEvent) => {
+  const scrollToSection = (sectionId: string, event?: any) => {
     if (event) {
       event.preventDefault()
     }
 
     const element = document.getElementById(sectionId)
     if (element) {
-      // Smooth scroll to the element
       element.scrollIntoView({ behavior: "smooth" })
     }
   }
 
   const steps = [
     {
-      icon: <Camera className="h-10 w-10 text-[#0066B1]" />,
+      icon: Camera,
       title: "Submit Photos",
       description: "Send photos of your damaged rims through the quote form.",
       linkTo: "quote",
     },
     {
-      icon: <ClipboardCheck className="h-10 w-10 text-[#0066B1]" />,
+      icon: ClipboardCheck,
       title: "Get a Quote",
       description: "Receive a detailed quote based on the damage and your restoration needs.",
     },
     {
-      icon: <Truck className="h-10 w-10 text-[#0066B1]" />,
+      icon: Truck,
       title: "Drop-off or Pickup",
       description: "Drop off your wheels, car or use our convenient pickup service.",
     },
     {
-      icon: <Wrench className="h-10 w-10 text-[#0066B1]" />,
+      icon: Wrench,
       title: "Restoration Process",
       description: "Your rims are restored using a proven multi-step process, with updates along the way.",
     },
     {
-      icon: <ThumbsUp className="h-10 w-10 text-[#0066B1]" />,
+      icon: ThumbsUp,
       title: "Quality Check & Return",
       description: "After a thorough quality check, your restored rims are ready for pickup or delivery.",
     },
@@ -49,7 +44,7 @@ export default function Process() {
 
   return (
     <section id="process" className="py-20 bg-gray-100">
-      <div className="container">
+      <div className="container max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">The Restoration Process</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -57,28 +52,85 @@ export default function Process() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-5 gap-6">
-          {steps.map((step, index) => (
-            <Card key={index} className="text-center">
-              <CardHeader className="pb-3">
-                <div className="mx-auto mb-4">{step.icon}</div>
-                <CardTitle className="text-lg font-semibold mb-2">Step {index + 1}</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-0">
-                {step.linkTo ? (
-                  <h3
-                    className="font-medium mb-3 text-[#0066B1] hover:underline cursor-pointer transition-colors"
-                    onClick={(e) => scrollToSection(step.linkTo, e)}
-                  >
-                    {step.title}
-                  </h3>
-                ) : (
-                  <h3 className="font-medium mb-3">{step.title}</h3>
-                )}
-                <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="relative">
+          {/* Desktop: Horizontal layout */}
+          <div className="hidden md:grid md:grid-cols-5 gap-8">
+            {steps.map((step, index) => {
+              const Icon = step.icon
+              return (
+                <div key={index} className="relative">
+                  <div className="flex flex-col items-center text-center">
+                    {/* Step number and icon */}
+                    <div className="relative mb-6">
+                      <div className="w-20 h-20 rounded-full bg-[#0066B1] flex items-center justify-center mb-4">
+                        <Icon className="h-10 w-10 text-white" />
+                      </div>
+                      <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[#FF0000] text-white flex items-center justify-center font-bold text-sm">
+                        {index + 1}
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    {step.linkTo ? (
+                      <h3
+                        className="font-bold text-lg mb-3 cursor-pointer hover:text-[#0066B1] transition-colors"
+                        onClick={(e) => scrollToSection(step.linkTo, e)}
+                      >
+                        {step.title}
+                      </h3>
+                    ) : (
+                      <h3 className="font-bold text-lg mb-3">{step.title}</h3>
+                    )}
+                    <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                  </div>
+
+                  {/* Connector line */}
+                  {index < steps.length - 1 && (
+                    <div className="absolute top-10 left-[60%] w-[80%] h-0.5 bg-[#0066B1]/30 hidden xl:block" />
+                  )}
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Mobile: Vertical layout */}
+          <div className="md:hidden space-y-8">
+            {steps.map((step, index) => {
+              const Icon = step.icon
+              return (
+                <div key={index} className="relative pl-16">
+                  {/* Step number and icon */}
+                  <div className="absolute left-0 top-0">
+                    <div className="relative">
+                      <div className="w-14 h-14 rounded-full bg-[#0066B1] flex items-center justify-center">
+                        <Icon className="h-7 w-7 text-white" />
+                      </div>
+                      <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-[#FF0000] text-white flex items-center justify-center font-bold text-xs">
+                        {index + 1}
+                      </div>
+                    </div>
+                    {/* Connector line */}
+                    {index < steps.length - 1 && <div className="absolute left-7 top-14 w-0.5 h-16 bg-[#0066B1]/30" />}
+                  </div>
+
+                  {/* Content */}
+                  <div>
+                    {step.linkTo ? (
+                      <h3
+                        className="font-bold text-lg mb-2 cursor-pointer hover:text-[#0066B1] transition-colors"
+                        onClick={(e) => scrollToSection(step.linkTo, e)}
+                      >
+                        {step.title}
+                      </h3>
+                    ) : (
+                      <h3 className="font-bold text-lg mb-2">{step.title}</h3>
+                    )}
+                    <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
         </div>
       </div>
     </section>

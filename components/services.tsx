@@ -1,8 +1,9 @@
 "use client"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
-import { Check } from "lucide-react"
+import { Check, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 
 export default function Services() {
   const services = [
@@ -16,6 +17,8 @@ export default function Services() {
         "Precise paint code matching (for solid gloss colors)",
         "Durable gloss clear coat application",
       ],
+      buttonColor: "bg-[#0066B1] hover:bg-[#0066B1]/90",
+      badge: null,
     },
     {
       title: "Premium Restoration",
@@ -31,30 +34,32 @@ export default function Services() {
         "Vehicle drop-off and collection",
       ],
       featured: true,
+      buttonColor: "bg-[#FF0000] hover:bg-[#FF0000]/90",
+      badge: "Most Popular",
     },
     {
       title: "Custom Refinishing",
       price: "$950",
       pricePer: "per set of 4 rims",
-      description: "Transform your rims with a truly unique look and a complete, high-end finish.",
+      description: "Transform your rims with a truly unique look and complete, high-end finish",
       features: [
         "Professional tire removal, fitting, and rebalance",
         "Specialty finishes (e.g., shadow chrome, pearl, two-tone)",
         "Brake caliper painting",
         "Polished metal finishes",
       ],
+      buttonColor: "bg-[#0066B1] hover:bg-[#0066B1]/90",
+      badge: null,
     },
   ]
 
   // Function to scroll to quote form and set the selected service
   const scrollToQuoteWithService = (serviceTitle: string) => {
-    // Scroll to the quote section
     const quoteSection = document.getElementById("quote")
     if (quoteSection) {
       quoteSection.scrollIntoView({ behavior: "smooth" })
     }
 
-    // Dispatch a custom event to notify the quote form component
     const event = new CustomEvent("serviceSelected", { detail: serviceTitle })
     window.dispatchEvent(event)
   }
@@ -70,36 +75,53 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className={`relative ${service.featured ? "border-[#FF0000] shadow-lg" : ""}`}>
-              {service.featured && (
-                <div className="absolute top-0 right-0 bg-[#FF0000] text-white px-4 py-1 text-sm font-medium rounded-bl-lg rounded-tr-lg">
-                  Most Popular
+            <Card
+              key={index}
+              className={`relative flex flex-col transition-all duration-300 ${
+                service.featured
+                  ? "border-[#FF0000] border-2 shadow-xl scale-105 bg-white"
+                  : "border-gray-200 hover:shadow-lg hover:scale-105 bg-white"
+              }`}
+            >
+              {service.badge && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                  <Badge className="bg-[#FF0000] hover:bg-[#FF0000] text-white px-4 py-1.5 text-sm font-semibold flex items-center gap-1 shadow-lg">
+                    <Sparkles className="h-3.5 w-3.5" />
+                    {service.badge}
+                  </Badge>
                 </div>
               )}
-              <CardHeader>
-                <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
-                <CardDescription>
-                  <span className="text-2xl font-bold block mt-2">{service.price}</span>
-                  <span className="text-sm block">{service.pricePer}</span>
-                  <span className="mt-2 block">{service.description}</span>
-                </CardDescription>
+
+              <CardHeader className={service.featured ? "pt-8" : "pt-6"}>
+                <CardTitle className="text-2xl font-bold text-center mb-2">{service.title}</CardTitle>
+                <div className="text-center mb-3">
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-4xl font-bold text-[#0066B1]">{service.price}</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-1">{service.pricePer}</p>
+                </div>
+                <CardDescription className="text-center text-base">{service.description}</CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
+
+              <CardContent className="flex-1 pb-6">
+                <div className="space-y-3">
                   {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-start">
-                      <Check className="h-5 w-5 text-[#0066B1] shrink-0 mr-2" />
-                      <span>{feature}</span>
-                    </li>
+                    <div key={i} className="flex items-start gap-3">
+                      <div className="mt-0.5">
+                        <Check className="h-5 w-5 text-[#0066B1] shrink-0" />
+                      </div>
+                      <span className="text-sm leading-relaxed">{feature}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </CardContent>
-              <CardFooter>
+
+              <CardFooter className="pt-0 pb-6">
                 <Button
                   onClick={() => scrollToQuoteWithService(service.title)}
-                  className={`w-full ${service.featured ? "bg-[#FF0000] hover:bg-[#FF0000]/90" : "bg-[#0066B1] hover:bg-[#0066B1]/90"}`}
+                  className={`w-full text-white font-semibold py-6 text-base ${service.buttonColor} transition-all`}
                 >
                   Get a Quote
                 </Button>
@@ -108,8 +130,8 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="mt-6 text-center">
-          <p className="text-xs text-muted-foreground italic max-w-2xl mx-auto">
+        <div className="mt-8 text-center">
+          <p className="text-xs text-muted-foreground italic max-w-3xl mx-auto">
             *Final pricing may vary based on rim condition and size. Submit photos via the quote form for an accurate
             assessment.
           </p>
