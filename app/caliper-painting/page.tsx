@@ -1,10 +1,10 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BeforeAfterGallery from "@/components/before-after-gallery"
 import { Card, CardContent } from "@/components/ui/card"
 import { Paintbrush, Shield, Zap, Check } from "lucide-react"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Brake Caliper Painting Adelaide | Professional Caliper Refinishing",
@@ -99,7 +99,8 @@ export default function CaliperPainting() {
             style={{
               objectPosition: "center",
             }}
-            placeholder="empty"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
