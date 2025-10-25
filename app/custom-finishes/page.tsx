@@ -157,8 +157,8 @@ export default function CustomFinishes() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             <Card className="bg-[#a8a9ad] border-gray-400">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-gray-900">Shadow Chrome</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-gray-900">Shadow Chrome</h3>
                 <p className="text-gray-800">
                   A dark, mirror-like finish that combines the depth of black with the reflectivity of chrome for a
                   dramatic, luxury appearance.
@@ -167,8 +167,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-gradient-to-br from-gray-900 via-black to-gray-800 border-gray-700">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-white">Gloss Black</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-white">Gloss Black</h3>
                 <p className="text-gray-200">
                   Deep, mirror-like black finish that provides a sleek, premium appearance with exceptional depth and
                   shine.
@@ -177,8 +177,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#ffffff] border-gray-400">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-gray-900">Pearl White</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-gray-900">Pearl White</h3>
                 <p className="text-gray-800">
                   A classic white finish with pearlescent shimmer that adds a touch of elegance to any vehicle.
                 </p>
@@ -186,8 +186,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#B08D57] border-amber-700">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-white">Lamborghini Bronzo Zante</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-white">Lamborghini Bronzo Zante</h3>
                 <p className="text-gray-100">
                   Exotic Lamborghini bronze metallic that brings a luxurious, racing-inspired aesthetic with stunning
                   depth and warmth.
@@ -196,8 +196,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#393D47] border-gray-600">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-white">Ferrari Anthracite Grey</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-white">Ferrari Anthracite Grey</h3>
                 <p className="text-gray-200">
                   A sophisticated dark grey metallic finish popular on European luxury and sports vehicles for a factory
                   premium look.
@@ -206,8 +206,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#2F539B] border-blue-700">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-white">BMW Estoril Blue</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-white">BMW Estoril Blue</h3>
                 <p className="text-gray-100">
                   Iconic BMW Motorsport blue that adds a sporty, premium look synonymous with BMW M performance
                   vehicles.
@@ -216,8 +216,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#CBE800] border-yellow-400">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-gray-900">Porsche Acid Green</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-gray-900">Porsche Acid Green</h3>
                 <p className="text-gray-800">
                   Distinctive Porsche sport green that commands attention and exemplifies modern performance styling.
                 </p>
@@ -225,8 +225,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#a9211d] border-red-700">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-white">Audi Tornado Red</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-white">Audi Tornado Red</h3>
                 <p className="text-gray-100">
                   Bold Audi sport red that makes a powerful statement and perfectly complements high-performance
                   vehicles.
@@ -235,8 +235,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#bb1e10] border-red-700">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-white">Brembo Red</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-white">Brembo Red</h3>
                 <p className="text-gray-100">
                   Iconic Brembo performance red - the ultimate brake caliper and accent color that signals serious
                   stopping power and racing heritage.
@@ -245,8 +245,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#28282B] border-gray-700">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-white">Matte Black</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-white">Matte Black</h3>
                 <p className="text-gray-200">
                   A modern, understated finish with a smooth, non-reflective appearance that's both aggressive and
                   refined.
@@ -255,8 +255,8 @@ export default function CustomFinishes() {
             </Card>
 
             <Card className="bg-[#F8CD02] border-yellow-400">
-              <CardContent className="pt-4 text-center">
-                <h3 className="font-semibold text-xl mb-3 text-gray-900">Porsche Speed Yellow</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px]">
+                <h3 className="font-semibold text-xl mb-4 text-gray-900">Porsche Speed Yellow</h3>
                 <p className="text-gray-800">
                   Vibrant Porsche sport yellow that delivers maximum visual impact and embodies the spirit of
                   high-performance racing.
@@ -269,8 +269,8 @@ export default function CustomFinishes() {
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500 via-yellow-500 to-green-500"></div>
                 <div className="absolute inset-0 bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 mix-blend-multiply"></div>
               </div>
-              <CardContent className="pt-4 text-center relative z-10">
-                <h3 className="font-semibold text-xl mb-3 text-gray-900">Custom Match</h3>
+              <CardContent className="p-6 text-center flex flex-col justify-center min-h-[200px] relative z-10">
+                <h3 className="font-semibold text-xl mb-4 text-gray-900">Custom Match</h3>
                 <p className="text-gray-700">
                   Any color imaginable - I can match your vehicle's paint code or create a completely unique custom
                   shade.
