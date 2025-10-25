@@ -22,17 +22,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
     description:
-      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.",
+      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
     url: "https://www.rimrevivals.com.au",
     siteName: "Rim Revivals",
     locale: "en_AU",
     type: "website",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/pexels-redyar-rzgar-1257188192-30932163.jpg-5q5xV7rLgwSneYAoRHxbJmPNxUo0by.webp",
+        url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
+        alt: "Professional BMW wheel and brake caliper restoration showcasing premium alloy rim refinishing and caliper painting services in Adelaide",
       },
     ],
   },
@@ -41,9 +41,7 @@ export const metadata: Metadata = {
     title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
     description:
       "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
-    images: [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/pexels-redyar-rzgar-1257188192-30932163.jpg-5q5xV7rLgwSneYAoRHxbJmPNxUo0by.webp",
-    ],
+    images: ["https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp"],
   },
   alternates: {
     canonical: "https://www.rimrevivals.com.au",

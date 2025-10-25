@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     description:
       "Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing.",
     url: "https://www.rimrevivals.com.au/custom-finishes",
+    images: [
+      {
+        url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
+        width: 1920,
+        height: 1280,
+        alt: "Custom rim finishes in Adelaide showcasing BMW wheels with specialty refinishing",
+      },
+    ],
   },
 }
 
@@ -92,6 +100,7 @@ export default function CustomFinishes() {
             style={{
               objectPosition: "center",
             }}
+            placeholder="empty"
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />

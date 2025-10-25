@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     description:
       "Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes.",
     url: "https://www.rimrevivals.com.au/budget-repairs",
+    images: [
+      {
+        url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
+        width: 1920,
+        height: 1280,
+        alt: "Professional budget rim repairs in Adelaide showcasing restored BMW wheels",
+      },
+    ],
   },
 }
 
@@ -97,6 +105,7 @@ export default function BudgetRepairs() {
             style={{
               objectPosition: "center",
             }}
+            placeholder="empty"
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />

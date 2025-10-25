@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     description:
       "Convenient mobile rim restoration service in Adelaide with pickup and delivery throughout the metro area.",
     url: "https://www.rimrevivals.com.au/mobile-service",
+    images: [
+      {
+        url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
+        width: 1920,
+        height: 1280,
+        alt: "Mobile rim restoration service in Adelaide with convenient pickup and delivery",
+      },
+    ],
   },
 }
 
@@ -123,7 +131,7 @@ export default function MobileService() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
+            src="/images/hero-bmw-wheel.webp"
             alt="Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience."
             fill
             priority
@@ -133,6 +141,7 @@ export default function MobileService() {
             style={{
               objectPosition: "center",
             }}
+            placeholder="empty"
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
@@ -333,7 +342,8 @@ export default function MobileService() {
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground text-center mt-6">
-                  Restoration, pickup and delivery fees vary based on location. Get an exact quote when you submit your request.
+                  Restoration, pickup and delivery fees vary based on location. Get an exact quote when you submit your
+                  request.
                 </p>
               </CardContent>
             </Card>

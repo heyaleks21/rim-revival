@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     description:
       "Budget brake caliper painting in Adelaide with high-temperature 2k paint in custom colors to complement your wheels.",
     url: "https://www.rimrevivals.com.au/caliper-painting",
+    images: [
+      {
+        url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
+        width: 1920,
+        height: 1280,
+        alt: "Brake caliper painting in Adelaide showcasing BMW wheels with custom painted calipers",
+      },
+    ],
   },
 }
 
@@ -81,7 +89,7 @@ export default function CaliperPainting() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/design-mode/pexels-redyar-rzgar-1257188192-30932163.jpg.webp"
+            src="/images/hero-bmw-wheel.webp"
             alt="Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance."
             fill
             priority
@@ -91,6 +99,7 @@ export default function CaliperPainting() {
             style={{
               objectPosition: "center",
             }}
+            placeholder="empty"
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
