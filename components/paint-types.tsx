@@ -1,8 +1,6 @@
 "use client"
 
 import type React from "react"
-
-import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Sun, Droplet, Sparkles, Palette, ImageIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -65,49 +63,47 @@ export default function PaintTypes() {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <CardContent className="p-0">
-              <div className="grid md:grid-cols-2">
-                <div className="bg-[#0066B1]/10 p-8 flex items-center justify-center rounded-l-lg">
-                  <div className="max-w-md text-center">
-                    <h3 className="text-2xl font-bold mb-4">What Type of Paint Do You Use?</h3>
-                    <p className="text-muted-foreground mb-6">
-                      Premium automotive-grade paint systems including epoxy and 2K primers, high performance base coat
-                      binders, and 2K polyurethane clear coats. All paint systems feature advanced UV inhibitors
-                      specifically rated for harsh Australian summers.
-                    </p>
-                    <p className="text-muted-foreground mb-6">
-                      Automotive-grade finishes are engineered to be weather and chemical resistant, protecting against
-                      road salt, brake dust, and cleaning products while maintaining their integrity and appearance for
-                      years to come.
-                    </p>
-                    <div className="flex justify-center">
-                      <Button
-                        onClick={(e) => scrollToSection("gallery", e)}
-                        className="bg-[#FF0000] hover:bg-[#FF0000]/90 text-white flex items-center justify-center gap-2"
-                      >
-                        <ImageIcon className="h-4 w-4" />
-                        See Examples
-                      </Button>
-                    </div>
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <div className="grid md:grid-cols-2">
+              <div className="bg-[#0066B1]/10 p-8 flex items-center justify-center">
+                <div className="max-w-md text-center">
+                  <h3 className="text-2xl font-bold mb-4">What Type of Paint Do You Use?</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Premium automotive-grade paint systems including epoxy and 2K primers, high performance base coat
+                    binders, and 2K polyurethane clear coats. All paint systems feature advanced UV inhibitors
+                    specifically rated for harsh Australian summers.
+                  </p>
+                  <p className="text-muted-foreground mb-6">
+                    Automotive-grade finishes are engineered to be weather and chemical resistant, protecting against
+                    road salt, brake dust, and cleaning products while maintaining their integrity and appearance for
+                    years to come.
+                  </p>
+                  <div className="flex justify-center">
+                    <Button
+                      onClick={(e) => scrollToSection("gallery", e)}
+                      className="bg-[#FF0000] hover:bg-[#FF0000]/90 text-white flex items-center justify-center gap-2"
+                    >
+                      <ImageIcon className="h-4 w-4" />
+                      See Examples
+                    </Button>
                   </div>
                 </div>
-                <div className="bg-white p-8 rounded-r-lg">
-                  <ul className="space-y-6">
-                    {paintFeatures.map((feature, index) => (
-                      <li key={index} className="flex gap-4">
-                        <div className="shrink-0 mt-1">{feature.icon}</div>
-                        <div>
-                          <h4 className="font-semibold text-lg mb-1">{feature.title}</h4>
-                          <p className="text-muted-foreground text-sm">{feature.description}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
-            </CardContent>
-          </Card>
+              <div className="bg-white p-8">
+                <ul className="space-y-6">
+                  {paintFeatures.map((feature, index) => (
+                    <li key={index} className="flex gap-4">
+                      <div className="shrink-0 mt-1">{feature.icon}</div>
+                      <div>
+                        <h4 className="font-semibold text-lg mb-1">{feature.title}</h4>
+                        <p className="text-muted-foreground text-sm">{feature.description}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
