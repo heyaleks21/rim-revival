@@ -102,7 +102,7 @@ export default function Gallery() {
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla2.webp",
       afterDesc: "Tesla sport wheels transformed with a matte black by Rim Revivals Adelaide",
       title: "EV Pre-Sale Restoration",
-      description: "Tesla rims with heavy rash restored to a factory appearance.",
+      description: "Tesla rims with heavy gutter rash restored to a factory appearance.",
     },
     {
       before:
