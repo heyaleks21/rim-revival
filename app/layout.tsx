@@ -11,7 +11,10 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Enhanced metadata with improved SEO
 export const metadata: Metadata = {
-  title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
+  title: {
+    default: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
+    template: "%s | Rim Revivals Adelaide",
+  },
   description:
     "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.",
   keywords:
@@ -24,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
     url: "https://www.rimrevivals.com.au",
-    siteName: "Rim Revivals",
+    siteName: "Rim Revivals Adelaide",
     locale: "en_AU",
     type: "website",
     images: [
@@ -58,7 +61,6 @@ export const metadata: Metadata = {
       type: "image/svg+xml",
     },
   },
-  applicationName: "Rim Revivals",
     generator: 'v0.app'
 }
 
