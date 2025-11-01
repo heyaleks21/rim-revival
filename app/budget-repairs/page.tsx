@@ -7,13 +7,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Check, Shield, Wrench, DollarSign } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Budget Rim Repairs Adelaide | Affordable Wheel Restoration",
+  title: "Budget Rim Repairs | Affordable Wheel Restoration",
   description:
     "Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results.",
   keywords:
     "budget rim repair, cheap wheel restoration Adelaide, affordable rim refinishing, curb rash repair cost, budget alloy wheel repair",
   openGraph: {
-    title: "Budget Rim Repairs Adelaide | Affordable Wheel Restoration",
+    title: "Budget Rim Repairs | Affordable Wheel Restoration",
     description:
       "Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes.",
     url: "https://www.rimrevivals.com.au/budget-repairs",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Professional budget rim repairs in Adelaide showcasing restored BMW wheels",
+        alt: "Budget Rim Repairs | Affordable Wheel Restoration",
       },
     ],
   },

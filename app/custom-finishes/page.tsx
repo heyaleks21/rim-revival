@@ -7,13 +7,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles, Palette, Wrench, Star } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Custom Rim Finishes Adelaide | Specialty Wheel Refinishing",
+  title: "Custom Rim Finishes SA | Specialty Wheel Refinishing",
   description:
     "Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing.",
   keywords:
     "custom rim finishes, specialty wheel painting Adelaide, pearl rim finish, shadow chrome wheels, two-tone rims, custom alloy wheel refinishing",
   openGraph: {
-    title: "Custom Rim Finishes Adelaide | Specialty Wheel Refinishing",
+    title: "Custom Rim Finishes SA | Specialty Wheel Refinishing",
     description:
       "Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing.",
     url: "https://www.rimrevivals.com.au/custom-finishes",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Custom rim finishes in Adelaide showcasing BMW wheels with specialty refinishing",
+        alt: "Custom Rim Finishes SA | Specialty Wheel Refinishing",
       },
     ],
   },

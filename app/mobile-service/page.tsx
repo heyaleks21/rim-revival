@@ -7,13 +7,13 @@ import { Truck, MapPin, Clock, CheckCircle } from "lucide-react"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Mobile Rim Restoration Adelaide | Pickup & Delivery Service",
+  title: "Mobile Rim Restoration | Pickup & Delivery Service",
   description:
     "Convenient mobile rim restoration service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience.",
   keywords:
     "mobile rim restoration Adelaide, wheel pickup delivery, convenient rim repair, mobile wheel refinishing Adelaide, rim restoration pickup service",
   openGraph: {
-    title: "Mobile Rim Restoration Adelaide | Pickup & Delivery Service",
+    title: "Mobile Rim Restoration | Pickup & Delivery Service",
     description:
       "Convenient mobile rim restoration service in Adelaide with pickup and delivery throughout the metro area.",
     url: "https://www.rimrevivals.com.au/mobile-service",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Mobile rim restoration service in Adelaide with convenient pickup and delivery",
+        alt: "Mobile Rim Restoration | Pickup & Delivery Service",
       },
     ],
   },

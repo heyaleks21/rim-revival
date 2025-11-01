@@ -7,13 +7,13 @@ import { Paintbrush, Shield, Zap, Check } from "lucide-react"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Brake Caliper Painting Adelaide | Professional Caliper Refinishing",
+  title: "Brake Caliper Painting | Budget Caliper Refinishing",
   description:
     "Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance.",
   keywords:
     "brake caliper painting Adelaide, caliper refinishing, Brembo red calipers, custom caliper colors, high temperature caliper paint",
   openGraph: {
-    title: "Brake Caliper Painting Adelaide | Budget Caliper Refinishing",
+    title: "Brake Caliper Painting | Budget Caliper Refinishing",
     description:
       "Budget brake caliper painting in Adelaide with high-temperature 2k paint in custom colors to complement your wheels.",
     url: "https://www.rimrevivals.com.au/caliper-painting",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Brake caliper painting in Adelaide showcasing BMW wheels with custom painted calipers",
+        alt: "Brake Caliper Painting | Budget Caliper Refinishing",
       },
     ],
   },
