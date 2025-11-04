@@ -57,18 +57,17 @@ export default function Gallery() {
       title: "Rare Wheel Refresh",
       description: "Factory Land Rover rims with severe rash and multiple touch ups transformed.",
     },
-    
-    
-    {
+     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx1.webp",
-      beforeDesc: "Diamond-cut face wheels with oxidation and curb damage before professional restoration in Adelaide",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vyss1.webp",
+      beforeDesc:
+        "Heavily rashed and plasti-dipped Holden VY SS rims stripped and restored.",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx2.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vysss2.webp",
       afterDesc:
-        "Boring grey WRX rims refinished in a high gloss black, with Porsche acid green calipers.",
-      title: "Premium Style Upgrade",
-      description: "Boring grey WRX rims refinished in a high gloss black, with Porsche acid green calipers.",
+        "Holden VY SS rims transformed with premium metallic grey finish and clear coat protection by Rim Revivals Adelaide",
+      title: "Much Needed Love",
+      description: "Heavily rashed and plasti-dipped Holden VY SS rims stripped and restored.",
     },
     {
       before:
@@ -106,15 +105,14 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/csl1.webp",
-      beforeDesc:
-        "Rattle canned BMW CSL rims stripped and restored.",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx1.webp",
+      beforeDesc: "Diamond-cut face wheels with oxidation and curb damage before professional restoration in Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/csl2.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/wrx2.webp",
       afterDesc:
-        "BMW CSL rims transformed with premium gloss black finish and clear coat protection by Rim Revivals Adelaide",
-      title: "Much Needed Love",
-      description: "Heavily rashed and rattle canned BMW CSL rims stripped and restored.",
+        "Boring grey WRX rims refinished in a high gloss black, with Porsche acid green calipers.",
+      title: "Premium Style Upgrade",
+      description: "Boring grey WRX rims refinished in a high gloss black, with Porsche acid green calipers.",
     },
     {
       before:

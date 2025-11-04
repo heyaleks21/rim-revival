@@ -72,14 +72,17 @@ export default function CustomFinishes() {
       title: "Metallic Silver Finish",
       description: "Premium metallic restoration with a caliper and hub refresh.",
     },
-    {
-      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla1.webp",
+   {
+      before:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vyss1.webp",
       beforeDesc:
-        "Factory  Tesla sport wheels with heavy rash before professional repair in Adelaide",
-      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/tesla2.webp",
-      afterDesc: "Tesla sport wheels transformed with matte black finish by Rim Revivals Adelaide",
-      title: "Matte Black Restoration",
-      description: "Tesla rims with heavy rash restored to a factory appearance.",
+        "Heavily rashed and plasti-dipped Holden VY SS rims stripped and restored.",
+      after:
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vysss2.webp",
+      afterDesc:
+        "Holden VY SS rims transformed with premium metallic grey finish and clear coat protection by Rim Revivals Adelaide",
+      title: "Much Needed Love",
+      description: "Heavily rashed and plasti-dipped rims stripped and restored.",
     },
   ]
 
