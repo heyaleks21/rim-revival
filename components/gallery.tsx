@@ -36,15 +36,15 @@ export default function Gallery() {
     },
     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa1.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m61.webp",
       beforeDesc:
-        "Factory Alfa Romeo rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
+        "Neglected BMW M6 rims and calipers restored in a bright metallic silver",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa2.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m62.webp",
       afterDesc:
-        "Alfa Romeo rims and calipers transformed with an Anthracite grey and Alfa red finish.",
-      title: "Premium Original Restoration",
-      description: "Alfa Romeo rims transformed with an Anthracite grey finish and calipers in Alfa red.",
+        "BMW rims transformed with premium metallic gloss silver finish and clear coat protection by Rim Revivals Adelaide",
+      title: "Factory Refresh",
+      description: "Neglected BMW M6 rims restored in a bright metallic silver with a caliper and hub refresh.",
     },
     {
       before:
@@ -80,17 +80,17 @@ export default function Gallery() {
       title: "Classic Design Refresh",
       description: "Basic factory Mustang rims transformed with deep gloss black finish for a blacked-out look.",
     },
-    {
+     {
       before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m61.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa1.webp",
       beforeDesc:
-        "Neglected BMW M6 rims and calipers restored in a bright metallic silver",
+        "Factory Alfa Romeo rims with curb damage and scratches before restoration by Rim Revivals Adelaide",
       after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/m62.webp",
+        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/alfa2.webp",
       afterDesc:
-        "BMW rims transformed with premium metallic gloss silver finish and clear coat protection by Rim Revivals Adelaide",
-      title: "Factory Refresh",
-      description: "Neglected BMW M6 rims restored in a bright metallic silver with a caliper and hub refresh.",
+        "Alfa Romeo rims and calipers transformed with an Anthracite grey and Alfa red finish.",
+      title: "Premium Original Restoration",
+      description: "Alfa Romeo rims transformed with an Anthracite grey finish and calipers in Alfa red.",
     },
     {
       before:
