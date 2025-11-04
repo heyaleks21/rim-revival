@@ -11,10 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Enhanced metadata with improved SEO
 export const metadata: Metadata = {
-  title: {
-    default: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
-    template: "%s | Rim Revivals Adelaide",
-  },
+  title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
   description:
     "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.",
   keywords:
