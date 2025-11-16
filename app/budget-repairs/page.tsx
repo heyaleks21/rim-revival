@@ -4,13 +4,12 @@ import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BeforeAfterGallery from "@/components/before-after-gallery"
 import { Card, CardContent } from "@/components/ui/card"
-import { Check, Shield, Wrench, DollarSign } from 'lucide-react'
-import Script from "next/script"
+import { Check, Shield, Wrench, DollarSign } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Budget Rim Repairs | Affordable Wheel Restoration",
   description:
-    "Professional budget rim repairs from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results.",
+    "Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results.",
   keywords:
     "budget rim repair, cheap wheel restoration Adelaide, affordable rim refinishing, curb rash repair cost, budget alloy wheel repair",
   openGraph: {
@@ -91,67 +90,6 @@ export default function BudgetRepairs() {
 
   return (
     <main className="min-h-screen">
-      <Script
-        id="breadcrumb-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.rimrevivals.com.au",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Budget Rim Repairs",
-                item: "https://www.rimrevivals.com.au/budget-repairs",
-              },
-            ],
-          }),
-        }}
-      />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            serviceType: "Budget Rim Repairs",
-            name: "Budget Rim Repairs Adelaide",
-            description:
-              "Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results.",
-            provider: {
-              "@type": "AutoRepair",
-              name: "Rim Revivals",
-              url: "https://www.rimrevivals.com.au",
-              telephone: "0498256447",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Adelaide",
-                addressRegion: "SA",
-                addressCountry: "AU",
-              },
-            },
-            areaServed: {
-              "@type": "City",
-              name: "Adelaide",
-            },
-            offers: {
-              "@type": "Offer",
-              price: "450.00",
-              priceCurrency: "AUD",
-              description: "Budget rim restoration package - per set of 4 rims",
-            },
-          }),
-        }}
-      />
-
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
         {/* Background Image */}

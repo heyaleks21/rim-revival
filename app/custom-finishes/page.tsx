@@ -4,8 +4,7 @@ import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BeforeAfterGallery from "@/components/before-after-gallery"
 import { Card, CardContent } from "@/components/ui/card"
-import { Sparkles, Palette, Wrench, Star } from 'lucide-react'
-import Script from "next/script"
+import { Sparkles, Palette, Wrench, Star } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Custom Rim Finishes | Specialty Wheel Refinishing",
@@ -73,7 +72,7 @@ export default function CustomFinishes() {
       title: "Metallic Silver Finish",
       description: "Premium metallic restoration with a caliper and hub refresh.",
     },
-    {
+   {
       before:
         "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vyss1.webp",
       beforeDesc:
@@ -89,67 +88,6 @@ export default function CustomFinishes() {
 
   return (
     <main className="min-h-screen">
-      <Script
-        id="breadcrumb-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.rimrevivals.com.au",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Custom Rim Finishes",
-                item: "https://www.rimrevivals.com.au/custom-finishes",
-              },
-            ],
-          }),
-        }}
-      />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            serviceType: "Custom Rim Finishes",
-            name: "Custom Rim Finishes Adelaide",
-            description:
-              "Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing with complete tire removal and custom color matching.",
-            provider: {
-              "@type": "AutoRepair",
-              name: "Rim Revivals",
-              url: "https://www.rimrevivals.com.au",
-              telephone: "0498256447",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Adelaide",
-                addressRegion: "SA",
-                addressCountry: "AU",
-              },
-            },
-            areaServed: {
-              "@type": "City",
-              name: "Adelaide",
-            },
-            offers: {
-              "@type": "Offer",
-              price: "950.00",
-              priceCurrency: "AUD",
-              description: "Custom refinishing package - per set of 4 rims",
-            },
-          }),
-        }}
-      />
-
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
         {/* Background Image */}
