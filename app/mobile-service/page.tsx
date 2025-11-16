@@ -153,8 +153,7 @@ export default function MobileService() {
               Mobile Rim Restoration Service in Adelaide
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-              Professional wheel restoration with the convenience of pickup and delivery throughout Adelaide metro. No
-              need to remove your wheels or visit my workshop.
+              Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
               <a
