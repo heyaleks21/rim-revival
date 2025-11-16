@@ -3,8 +3,9 @@ import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BeforeAfterGallery from "@/components/before-after-gallery"
 import { Card, CardContent } from "@/components/ui/card"
-import { Paintbrush, Shield, Zap, Check } from "lucide-react"
+import { Paintbrush, Shield, Zap, Check } from 'lucide-react'
 import Image from "next/image"
+import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Brake Caliper Painting | Budget Caliper Refinishing",
@@ -84,6 +85,67 @@ export default function CaliperPainting() {
 
   return (
     <main className="min-h-screen">
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.rimrevivals.com.au",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Brake Caliper Painting",
+                item: "https://www.rimrevivals.com.au/caliper-painting",
+              },
+            ],
+          }),
+        }}
+      />
+      <Script
+        id="service-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "Brake Caliper Painting",
+            name: "Brake Caliper Painting Adelaide",
+            description:
+              "Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance.",
+            provider: {
+              "@type": "AutoRepair",
+              name: "Rim Revivals",
+              url: "https://www.rimrevivals.com.au",
+              telephone: "0498256447",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Adelaide",
+                addressRegion: "SA",
+                addressCountry: "AU",
+              },
+            },
+            areaServed: {
+              "@type": "City",
+              name: "Adelaide",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "350.00",
+              priceCurrency: "AUD",
+              description: "Brake caliper painting add-on to wheel restoration",
+            },
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
         {/* Background Image */}

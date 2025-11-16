@@ -3,8 +3,9 @@ import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BeforeAfterGallery from "@/components/before-after-gallery"
 import { Card, CardContent } from "@/components/ui/card"
-import { Truck, MapPin, Clock, CheckCircle } from "lucide-react"
+import { Truck, MapPin, Clock, CheckCircle } from 'lucide-react'
 import Image from "next/image"
+import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Mobile Rim Restoration | Pickup & Delivery Service",
@@ -126,6 +127,67 @@ export default function MobileService() {
 
   return (
     <main className="min-h-screen">
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.rimrevivals.com.au",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Mobile Rim Restoration",
+                item: "https://www.rimrevivals.com.au/mobile-service",
+              },
+            ],
+          }),
+        }}
+      />
+      <Script
+        id="service-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "Mobile Rim Restoration",
+            name: "Mobile Rim Restoration Adelaide",
+            description:
+              "Convenient mobile rim restoration service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience with flexible scheduling.",
+            provider: {
+              "@type": "AutoRepair",
+              name: "Rim Revivals",
+              url: "https://www.rimrevivals.com.au",
+              telephone: "0498256447",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Adelaide",
+                addressRegion: "SA",
+                addressCountry: "AU",
+              },
+            },
+            areaServed: {
+              "@type": "City",
+              name: "Adelaide",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "50.00",
+              priceCurrency: "AUD",
+              description: "Mobile pickup and delivery service add-on",
+            },
+          }),
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
         {/* Background Image */}
@@ -153,8 +215,7 @@ export default function MobileService() {
               Mobile Rim Restoration Service in Adelaide
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-              Professional wheel restoration with the convenience of pickup and delivery throughout Adelaide metro. No
-              need to remove your wheels or visit my workshop.
+              Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
               <a
