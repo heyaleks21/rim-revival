@@ -112,7 +112,7 @@ export default function CustomFinishes() {
         <div className="container relative z-10 h-full flex items-center">
           <div className="max-w-2xl text-white text-center sm:text-left mx-auto sm:mx-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Custom Rim Finishes in Adelaide
+              Custom Rim Finishes
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
               Transform your wheels with specialty finishes including shadow chrome, pearl, metallic, and custom colors.

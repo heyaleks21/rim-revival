@@ -9,13 +9,13 @@ import Image from "next/image"
 export const metadata: Metadata = {
   title: "Mobile Wheel Repair Services | Pickup & Delivery Across South Australia",
   description:
-    "Convenient mobile rim service with pickup and delivery across South Australia. Professional wheel restoration at your location - we come to you.",
+    "Mobile pickup and delivery service across South Australia. Professional wheel restoration at your convenience.",
   keywords:
     "mobile rim restoration Adelaide, wheel pickup delivery Adelaide, convenient rim repair, mobile wheel refinishing, rim restoration pickup service Adelaide",
   openGraph: {
     title: "Mobile Wheel Repair Services | Pickup & Delivery Across South Australia",
     description:
-      "Convenient mobile rim service with pickup and delivery across Adelaide metro. Professional wheel restoration at your location.",
+      "Mobile pickup and delivery service across South Australia. Professional wheel restoration at your convenience.",
     url: "https://www.rimrevivals.com.au/mobile-service",
     images: [
       {
@@ -129,7 +129,7 @@ export default function MobileService() {
         <div className="absolute inset-0 bg-black">
           <Image
             src="/images/hero-bmw-wheel.webp"
-            alt="Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience."
+            alt="Convenient mobile rim repair service in Adelaide. Professional wheel restoration at your convenience."
             fill
             priority
             quality={90}
@@ -147,11 +147,10 @@ export default function MobileService() {
         <div className="container relative z-10 h-full flex items-center">
           <div className="max-w-2xl text-white text-center sm:text-left mx-auto sm:mx-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Mobile Rim Restoration Service in Adelaide
+              Mobile Rim Restoration
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-              Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro
-              area. Professional wheel restoration at your convenience.
+              Professional wheel restoration at your convenience. Mobile pickup and delivery service across South Australia. 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
               <a
