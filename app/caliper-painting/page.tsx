@@ -7,24 +7,27 @@ import { Paintbrush, Shield, Zap, Check } from "lucide-react"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Brake Caliper Painting | Budget Caliper Refinishing",
+  title: "Brake Caliper Painting | Brembo Red, BMW Blue & Custom Colors",
   description:
-    "Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance.",
+    "High-temperature caliper painting to complement your wheel restoration. Choose from Brembo red, BMW blue, Porsche green or custom colors in Adelaide.",
   keywords:
-    "brake caliper painting Adelaide, caliper refinishing, Brembo red calipers, custom caliper colors, high temperature caliper paint",
+    "brake caliper painting Adelaide, caliper refinishing, Brembo red calipers, custom caliper colors, high temperature caliper paint Adelaide",
   openGraph: {
-    title: "Brake Caliper Painting | Budget Caliper Refinishing",
+    title: "Brake Caliper Painting | Brembo Red, BMW Blue & Custom Colors",
     description:
-      "Budget brake caliper painting in Adelaide with high-temperature 2k paint in custom colors to complement your wheels.",
+      "High-temperature caliper painting to complement your wheel restoration. Choose from Brembo red, BMW blue, Porsche green or custom colors.",
     url: "https://www.rimrevivals.com.au/caliper-painting",
     images: [
       {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Brake Caliper Painting | Budget Caliper Refinishing",
+        alt: "Brake caliper painting in Adelaide - Brembo red, custom colors",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://www.rimrevivals.com.au/caliper-painting",
   },
 }
 
@@ -90,7 +93,7 @@ export default function CaliperPainting() {
         <div className="absolute inset-0 bg-black">
           <Image
             src="/images/hero-bmw-wheel.webp"
-            alt="Budget brake caliper painting in Adelaide. High-temperature 2k paint in custom colors including Brembo red, BMW blue, Porsche acid green and more. Enhance your wheel appearance."
+            alt="High-temperature caliper painting to complement your wheel restoration. Choose from Brembo red, BMW blue, Porsche green or custom colors in Adelaide."
             fill
             priority
             quality={90}
@@ -111,8 +114,8 @@ export default function CaliperPainting() {
               Brake Caliper Painting in Adelaide
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-              Budget high-temperature caliper painting to complement your wheel restoration. Choose from OEM colors or
-              create a custom look.
+              High-temperature caliper painting to complement your wheel restoration. Choose from Brembo red, BMW blue,
+              Porsche green or custom colors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
               <a

@@ -7,24 +7,27 @@ import { Truck, MapPin, Clock, CheckCircle } from "lucide-react"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Mobile Rim Restoration | Pickup & Delivery Service",
+  title: "Mobile Wheel Repair Services | Pickup & Delivery Across South Australia",
   description:
-    "Convenient mobile rim restoration service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience.",
+    "Convenient mobile rim service with pickup and delivery across South Australia. Professional wheel restoration at your location - we come to you.",
   keywords:
-    "mobile rim restoration Adelaide, wheel pickup delivery, convenient rim repair, mobile wheel refinishing Adelaide, rim restoration pickup service",
+    "mobile rim restoration Adelaide, wheel pickup delivery Adelaide, convenient rim repair, mobile wheel refinishing, rim restoration pickup service Adelaide",
   openGraph: {
-    title: "Mobile Rim Restoration | Pickup & Delivery Service",
+    title: "Mobile Wheel Repair Services | Pickup & Delivery Across South Australia",
     description:
-      "Convenient mobile rim restoration service in Adelaide with pickup and delivery throughout the metro area.",
+      "Convenient mobile rim service with pickup and delivery across Adelaide metro. Professional wheel restoration at your location.",
     url: "https://www.rimrevivals.com.au/mobile-service",
     images: [
       {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Mobile Rim Restoration | Pickup & Delivery Service",
+        alt: "Mobile rim service Adelaide - pickup and delivery wheel restoration",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://www.rimrevivals.com.au/mobile-service",
   },
 }
 
@@ -58,31 +61,25 @@ export default function MobileService() {
 
   const mobileGalleryImages = [
     {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ani1.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ani1.webp",
       beforeDesc: "Wheels collected via mobile service before restoration",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ani2.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ani2.webp",
       afterDesc: "Restored wheels delivered back via mobile service",
       title: "Mobile Service Transformation",
       description: "Picked up, restored, and delivered.",
     },
     {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv1.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv1.webp",
       beforeDesc: "Sport wheels collected for mobile restoration service",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv2.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv2.webp",
       afterDesc: "Sport wheels restored and returned via mobile service",
       title: "Convenient Mobile Restoration",
       description: "Professional results with convenient service.",
     },
     {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf1.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf1.webp",
       beforeDesc: "Multi-spoke wheels via mobile pickup service",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf2.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf2.webp",
       afterDesc: "Restored wheels delivered to customer's location",
       title: "Mobile Service Excellence",
       description: "Quality restoration at your convenience.",
@@ -153,7 +150,8 @@ export default function MobileService() {
               Mobile Rim Restoration Service in Adelaide
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-              Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro area. Professional wheel restoration at your convenience.
+              Convenient mobile rim repair service in Adelaide. I pickup and deliver your wheels throughout the metro
+              area. Professional wheel restoration at your convenience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
               <a

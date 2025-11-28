@@ -7,24 +7,27 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles, Palette, Wrench, Star } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Custom Rim Finishes | Specialty Wheel Refinishing",
+  title: "Custom Rim Finishes | Shadow Chrome, Pearl & Metallic",
   description:
-    "Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing.",
+    "Specialty finishes including shadow chrome, pearl, metallic, and custom colors. Premium wheel refinishing in Adelaide.",
   keywords:
-    "custom rim finishes, specialty wheel painting Adelaide, pearl rim finish, shadow chrome wheels, two-tone rims, custom alloy wheel refinishing",
+    "custom rim finishes Adelaide, shadow chrome wheels, pearl rim finish, metallic wheel painting, two-tone rims Adelaide, custom alloy wheel refinishing",
   openGraph: {
-    title: "Custom Rim Finishes | Specialty Wheel Refinishing",
+    title: "Custom Rim Finishes | Shadow Chrome, Pearl & Metallic",
     description:
-      "Custom rim finishes in Adelaide including shadow chrome, pearl, metallic, and two-tone designs. Professional specialty wheel refinishing.",
+      "Specialty finishes including shadow chrome, pearl, metallic, and custom colors. Premium wheel refinishing in Adelaide.",
     url: "https://www.rimrevivals.com.au/custom-finishes",
     images: [
       {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Custom Rim Finishes | Specialty Wheel Refinishing",
+        alt: "Custom rim finishes in Adelaide - shadow chrome, pearl, metallic wheel refinishing",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://www.rimrevivals.com.au/custom-finishes",
   },
 }
 
@@ -72,13 +75,10 @@ export default function CustomFinishes() {
       title: "Metallic Silver Finish",
       description: "Premium metallic restoration with a caliper and hub refresh.",
     },
-   {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vyss1.webp",
-      beforeDesc:
-        "Heavily rashed and plasti-dipped Holden VY SS rims stripped and restored.",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vysss2.webp",
+    {
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vyss1.webp",
+      beforeDesc: "Heavily rashed and plasti-dipped Holden VY SS rims stripped and restored.",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/vysss2.webp",
       afterDesc:
         "Holden VY SS rims transformed with premium metallic grey finish and clear coat protection by Rim Revivals Adelaide",
       title: "Much Needed Love",

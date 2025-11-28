@@ -7,24 +7,27 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Check, Shield, Wrench, DollarSign } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Budget Rim Repairs | Affordable Wheel Restoration",
+  title: "Budget Rim Repairs | From $450 Per Set",
   description:
-    "Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes. Quick turnaround, quality results.",
+    "Professional wheel restoration that won't break the bank. Perfect for minor damage and colour changes starting at $450 per set of 4 rims. Quick 2-3 day turnaround.",
   keywords:
-    "budget rim repair, cheap wheel restoration Adelaide, affordable rim refinishing, curb rash repair cost, budget alloy wheel repair",
+    "budget rim repair Adelaide, cheap wheel restoration, affordable rim refinishing, curb rash repair cost, budget alloy wheel repair Adelaide",
   openGraph: {
-    title: "Budget Rim Repairs | Affordable Wheel Restoration",
+    title: "Budget Rim Repairs | From $450 Per Set",
     description:
-      "Professional budget rim repairs in Adelaide from $450 per set. Perfect for minor curb damage, scratches, and simple colour changes.",
+      "Professional wheel restoration that won't break the bank. Perfect for minor damage and colour changes starting at $450 per set of 4 rims.",
     url: "https://www.rimrevivals.com.au/budget-repairs",
     images: [
       {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
         width: 1920,
         height: 1280,
-        alt: "Budget Rim Repairs | Affordable Wheel Restoration",
+        alt: "Budget rim repairs in Adelaide - affordable wheel restoration from $450",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://www.rimrevivals.com.au/budget-repairs",
   },
 }
 
@@ -57,31 +60,25 @@ export default function BudgetRepairs() {
 
   const budgetGalleryImages = [
     {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv1.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv1.webp",
       beforeDesc: "Factory silver Holden rims with light curb damage before budget restoration",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv2.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ssv2.webp",
       afterDesc: "Holden rims transformed with budget-friendly gloss black finish",
       title: "Silver to Black Budget Conversion",
       description: "Factory rims restored with my affordable budget package.",
     },
     {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf1.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf1.webp",
       beforeDesc: "Multi-spoke wheels with dull finish before budget repair",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf2.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/vf2.webp",
       afterDesc: "Multi-spoke wheels refinished in high-gloss black on a budget",
       title: "Budget Sport Wheel Restoration",
       description: "Affordable transformation with professional results.",
     },
     {
-      before:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ss1.webp",
+      before: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ss1.webp",
       beforeDesc: "Basic 5-spoke factory wheels before budget restoration",
-      after:
-        "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ss2.webp",
+      after: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/rim-revivals-gallery/budget/ss2.webp",
       afterDesc: "5-spoke wheels with deep gloss black finish - budget package",
       title: "Budget Classic Wheel Refresh",
       description: "Simple yet effective budget restoration.",

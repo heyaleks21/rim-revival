@@ -11,9 +11,12 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Enhanced metadata with improved SEO
 export const metadata: Metadata = {
-  title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
+  title: {
+    default: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
+    template: "%s | Rim Revivals Adelaide",
+  },
   description:
-    "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest work, quick turnarounds, and prices that won't dent your wallet.",
+    "Adelaide's Premier Rim Restoration Specialist. Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time.",
   keywords:
     "rim restoration, wheel repair, alloy wheel restoration, curb rash repair, Adelaide wheel repair, rim refinishing, wheel refurbishment",
   verification: {
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
     description:
-      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
+      "Adelaide's Premier Rim Restoration Specialist. Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time.",
     url: "https://www.rimrevivals.com.au",
     siteName: "Rim Revivals Adelaide",
     locale: "en_AU",
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rim Revivals Adelaide | Wheel & Caliper Painting | Rash Repairs",
     description:
-      "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
+      "Adelaide's Premier Rim Restoration Specialist. Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time.",
     images: ["https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp"],
   },
   alternates: {
@@ -80,7 +83,7 @@ export default function RootLayout({
               name: "Rim Revivals",
               alternateName: "Rim Revivals Adelaide",
               description:
-                "Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time of the big shops. No overheads, no waiting lists - just honest repairs, quick turnarounds, and prices that won't dent your wallet.",
+                "Adelaide's Premier Rim Restoration Specialist. Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time.",
               image:
                 "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//rim-revivals-logo-white.svg",
               logo: "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//rim-revivals-logo-white.svg",
@@ -167,6 +170,48 @@ export default function RootLayout({
           }}
         />
 
+        <Script
+          id="site-navigation-structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SiteNavigationElement",
+              name: "Main Navigation",
+              hasPart: [
+                {
+                  "@type": "WebPage",
+                  name: "Budget Rim Repairs",
+                  description:
+                    "Affordable rim repairs in Adelaide from $450 per set. Fix curb rash, scratches and colour changes with quick 2-3 day turnaround.",
+                  url: "https://www.rimrevivals.com.au/budget-repairs",
+                },
+                {
+                  "@type": "WebPage",
+                  name: "Custom Rim Finishes",
+                  description:
+                    "Premium custom wheel finishes including shadow chrome, pearl, metallic, and two-tone designs in Adelaide.",
+                  url: "https://www.rimrevivals.com.au/custom-finishes",
+                },
+                {
+                  "@type": "WebPage",
+                  name: "Brake Caliper Painting",
+                  description:
+                    "High-temperature brake caliper painting in Adelaide. Brembo red, BMW blue, Porsche green and custom colors.",
+                  url: "https://www.rimrevivals.com.au/caliper-painting",
+                },
+                {
+                  "@type": "WebPage",
+                  name: "Mobile Rim Service",
+                  description:
+                    "Convenient mobile rim pickup and delivery service across Adelaide metro. We come to you.",
+                  url: "https://www.rimrevivals.com.au/mobile-service",
+                },
+              ],
+            }),
+          }}
+        />
+
         {/* FAQ Schema for rich results */}
         <Script
           id="faq-structured-data"
@@ -233,10 +278,10 @@ export default function RootLayout({
               description:
                 "See the transformation our expert restoration services can achieve on damaged alloy wheels and rims.",
               image: [
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1%20before.JPEG-Ia8skjmymmTpwZJJW6w4CSeHpqYjBP.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1%20after.JPEG-ogNwqWnZzuBPnqNKiXWWwfF7YykXmE.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2%20before.JPEG-fouYKfotbPXKsdpBOgce6jccUdfRhB.jpeg",
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2%20after.JPEG-hbnUssx8MLdj8Lie2Iy5XfA9MRpkOo.jpeg",
+                "/images/1-20before.jpeg",
+                "/images/1-20after.jpeg",
+                "/images/2-20before.jpeg",
+                "/images/2-20after.jpeg",
                 "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/3%20before-ix8Dm0I9IuUj0dN4NFxU121yFr8I6t.JPEG",
                 "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/3%20after-uQxuRGTMaCRmldAgWd5Eds5D2jC3hM.JPEG",
               ],
