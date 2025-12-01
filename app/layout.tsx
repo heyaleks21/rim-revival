@@ -50,16 +50,8 @@ export const metadata: Metadata = {
     canonical: "https://www.rimrevivals.com.au",
   },
   icons: {
-    icon: [
-      {
-        url: "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//Rim%20(1000%20x%20500%20px)%20(1000%20x%20220%20px).svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: {
-      url: "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//Rim%20(1000%20x%20500%20px)%20(1000%20x%20220%20px).svg",
-      type: "image/svg+xml",
-    },
+    icon: "/rim-log.svg",
+    apple: "/rim-log.svg",
   },
     generator: 'v0.app'
 }
