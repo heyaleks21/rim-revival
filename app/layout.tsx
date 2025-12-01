@@ -76,9 +76,8 @@ export default function RootLayout({
               alternateName: "Rim Revivals Adelaide",
               description:
                 "Adelaide's Premier Rim Restoration Specialist. Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time.",
-              image:
-                "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//rim-revivals-logo-white.svg",
-              logo: "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//rim-revivals-logo-white.svg",
+              image: "https://www.rimrevivals.com.au/rim-logo.svg",
+              logo: "https://www.rimrevivals.com.au/rim-logo.svg",
               "@id": "https://www.rimrevivals.com.au",
               url: "https://www.rimrevivals.com.au",
               telephone: "0498256447",
