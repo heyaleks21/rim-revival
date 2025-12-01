@@ -90,8 +90,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "AutoRepair",
-              name: "Rim Revivals",
-              alternateName: "Rim Revivals Adelaide",
+              name: "Rim Revivals Adelaide",
+              alternateName: "Rim Revivals",
               description:
                 "Adelaide's Premier Rim Restoration Specialist. Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time.",
               image: "https://www.rimrevivals.com.au/rim-logo.svg",
