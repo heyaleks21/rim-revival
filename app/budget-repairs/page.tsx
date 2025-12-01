@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Check, Shield, Wrench, DollarSign } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Budget Rim Repairs | From $450 Per Set",
+  title: "Budget Rim Repairs Adelaide | From $450 Per Set",
   description:
     "Professional wheel restoration that won't break the bank. Perfect for minor damage and colour changes starting at $450 per set of 4 rims. Quick 2-3 day turnaround.",
   keywords:
