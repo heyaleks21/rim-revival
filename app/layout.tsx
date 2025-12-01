@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     canonical: "https://www.rimrevivals.com.au",
   },
   icons: {
-    icon: "/rim-log.svg",
-    apple: "/rim-log.svg",
+    icon: "/rim-logo.svg",
+    apple: "/rim-logo.svg",
   },
     generator: 'v0.app'
 }
