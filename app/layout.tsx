@@ -64,6 +64,24 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <Script
+          id="website-structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Rim Revivals Adelaide",
+              url: "https://www.rimrevivals.com.au",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://www.rimrevivals.com.au/?s={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+
         {/* Enhanced structured data with more detailed business information */}
         <Script
           id="structured-data"
@@ -161,6 +179,7 @@ export default function RootLayout({
           }}
         />
 
+        {/* Site Navigation Schema */}
         <Script
           id="site-navigation-structured-data"
           type="application/ld+json"
