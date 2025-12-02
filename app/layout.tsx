@@ -52,12 +52,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//Rim%20(1000%20x%20500%20px)%20(1000%20x%20220%20px).svg",
+        url: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/Rim%20%28500%20x%20500%20px%29.svg",
         type: "image/svg+xml",
       },
     ],
     apple: {
-      url: "https://rcuitxlzolonzxfyfjlo.supabase.co/storage/v1/object/public/beforeafter//Rim%20(1000%20x%20500%20px)%20(1000%20x%20220%20px).svg",
+      url: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/Rim%20%28500%20x%20500%20px%29.svg",
       type: "image/svg+xml",
     },
   },
@@ -99,11 +99,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AutoRepair",
               name: "Rim Revivals Adelaide",
-              alternateName: "Rim Revivals",
               description:
                 "Adelaide's Premier Rim Restoration Specialist. Transform scuffed and faded wheels into sleek, head-turning highlights at half the cost and quarter of the time.",
-              image: "https://www.rimrevivals.com.au/rim-logo.svg",
-              logo: "https://www.rimrevivals.com.au/rim-logo.svg",
+              image: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
+              logo: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/Rim%20%28500%20x%20500%20px%29.svg",
               "@id": "https://www.rimrevivals.com.au",
               url: "https://www.rimrevivals.com.au",
               telephone: "0498256447",
