@@ -50,8 +50,14 @@ export const metadata: Metadata = {
     canonical: "https://www.rimrevivals.com.au",
   },
   icons: {
-    icon: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/Rim%20%28500%20x%20500%20px%29.svg",
-    apple: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/Rim%20%28500%20x%20500%20px%29.svg",
+    icon: {
+      url: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/Rim%20%28500%20x%20500%20px%29.svg",
+      type: "image/svg+xml",
+    },
+    apple: {
+      url: "https://yqjsjmayq49ocucv.public.blob.vercel-storage.com/rims/Rim%20%28500%20x%20500%20px%29.svg",
+      type: "image/svg+xml",
+    },
   },
     generator: 'v0.app'
 }
