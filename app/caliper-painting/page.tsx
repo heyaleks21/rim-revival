@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       "High-temperature caliper painting to complement your wheel restoration. Choose from Brembo red, BMW blue, Porsche green or custom colors.",
     url: "https://www.rimrevivals.com.au/caliper-painting",
+    siteName: "Rim Revivals Adelaide",
     images: [
       {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
@@ -110,9 +111,7 @@ export default function CaliperPainting() {
         {/* Content */}
         <div className="container relative z-10 h-full flex items-center">
           <div className="max-w-2xl text-white text-center sm:text-left mx-auto sm:mx-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Brake Caliper Painting
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Brake Caliper Painting</h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
               High-temperature caliper painting to complement your wheel restoration. Choose from Brembo red, BMW blue,
               Porsche green or custom colors.

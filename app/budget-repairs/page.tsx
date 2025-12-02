@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       "Professional wheel restoration that won't break the bank. Perfect for minor damage and colour changes starting at $450 per set of 4 rims.",
     url: "https://www.rimrevivals.com.au/budget-repairs",
+    siteName: "Rim Revivals Adelaide",
     images: [
       {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
@@ -110,9 +111,7 @@ export default function BudgetRepairs() {
         {/* Content */}
         <div className="container relative z-10 h-full flex items-center">
           <div className="max-w-2xl text-white text-center sm:text-left mx-auto sm:mx-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Budget Rim Repairs
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Budget Rim Repairs</h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
               Professional wheel restoration that won't break the bank. Perfect for minor damage and colour changes
               starting at $450 per set of 4 rims.

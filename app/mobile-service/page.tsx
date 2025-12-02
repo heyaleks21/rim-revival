@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       "Mobile pickup and delivery service across South Australia. Professional wheel restoration at your convenience.",
     url: "https://www.rimrevivals.com.au/mobile-service",
+    siteName: "Rim Revivals Adelaide",
     images: [
       {
         url: "https://www.rimrevivals.com.au/images/hero-bmw-wheel.webp",
@@ -146,11 +147,10 @@ export default function MobileService() {
         {/* Content */}
         <div className="container relative z-10 h-full flex items-center">
           <div className="max-w-2xl text-white text-center sm:text-left mx-auto sm:mx-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Mobile Rim Restoration
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Mobile Rim Restoration</h1>
             <p className="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed">
-              Professional wheel restoration at your convenience. Mobile pickup and delivery service across South Australia. 
+              Professional wheel restoration at your convenience. Mobile pickup and delivery service across South
+              Australia.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
               <a
